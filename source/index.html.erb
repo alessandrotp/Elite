@@ -1,0 +1,511 @@
+---
+title: For Elite
+---
+
+<div id="fullpage" class="main-div">
+	<!-- <div class="bg"></div> <--></-->
+	<div class="section" id="section1" data-anchor="Home">
+		<div class="header" >
+			<div class="header-cont">
+			    <button class="c-hamburger c-hamburger--htx" data-open="exampleModal1">
+      				<span>toggle menu</span>
+    			</button>
+				<div class="drawer-text">
+					<p>Explore Services</p>
+					<div class="header-services menu-hide">
+						<div class="row header-services-1 header-services-row">
+							<div class="large-4 medium-4 small-4 columns header-services-left">
+								<%= image_tag "images/Administration.png", :class => "service-icon" %>
+							</div>
+							<div class="large-8 medium-8 small-8 columns header-services-right">
+								<a href="property.html"><p>Administration of Properties</p>
+							</div>
+						</div>
+						<div class="row header-services-row">
+							<div class="large-4 medium-4 small-4 columns header-services-left">
+								<%= image_tag "images/Payments.png", :class => "service-icon" %>
+							</div>
+							<div class="large-8 medium-8 small-8 columns header-services-right">
+								<a href="property.html"><p>Payments</p></a>
+							</div>
+						</div>
+						<div class="row header-services-row">
+							<div class="large-4 medium-4 smal	l-4 columns header-services-left">
+								<%= image_tag "images/PropertyMaintenance.png", :class => "service-icon" %>
+							</div>
+							<div class="large-8 medium-8 small-8 columns header-services-right">
+								<a href="property.html"><p>Properties Maintenance</p></a>
+							</div>
+						</div>
+						<div class="row header-services-row">
+							<div class="large-4 medium-4 small-4 columns header-services-left">
+								<%= image_tag "images/CreditCard.png", :class => "service-icon " %>
+							</div>
+							<div class="large-8 medium-8 small-8 columns header-services-right">
+								<a href="property.html"><p>Credit Card Management</p></a>
+							</div>
+						</div>
+						<div class="row header-services-row">
+							<div class="large-4 medium-4 small-4 columns header-services-left">
+								<%= image_tag "images/Paperwork.png", :class => "service-icon " %>
+							</div>
+							<div class="large-8 medium-8 small-8 columns header-services-right">
+								<a href="property.html"><p>Paperwork</p></a>
+							</div>
+						</div>
+						<div class="row header-services-row">
+							<div class="large-4 medium-4 small-4 columns header-services-left">
+								<%= image_tag "images/Planning.png", :class => "service-icon" %>
+							</div>
+							<div class="large-8 medium-8 small-8 columns header-services-right">
+								<a href="family.html"><p>Planning</p></a>
+							</div>
+						</div>
+						<div class="row header-services-row">
+							<div class="large-4 medium-4 small-4 columns header-services-left">
+								<%= image_tag "images/Insurance.png", :class => "service-icon" %>
+							</div>
+							<div class="large-8 medium-8 small-8 columns header-services-right">
+								<a href="family.html"><p>Insureance Management</p></a>
+							</div>
+						</div>
+						<div class="row header-services-row">
+							<div class="large-4 medium-4 small-4 columns header-services-left">
+								<%= image_tag "images/Concierge.png", :class => "service-icon" %>
+							</div>
+							<div class="large-8 medium-8 small-8 columns header-services-right">
+								<a href="concierge.html"><p>Concierge</p></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="full reveal" id="exampleModal1" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+					<%= image_tag "images/Elite-Logo-white.png", :class => "modal-logo" %>
+					<div class="row modal-cont">
+						<div class="large-6 medium-6 columns modal-list">
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="about_us.html">About Us</a></li>
+								<li><a href="services.html">Services</a></li>
+								<li><a href="#">Blog</a></li>
+								<!-- <li><a href="#">FAQ</a></li> -->
+							</ul>
+						</div>
+						<div class="large-6 medium-6 columns modal-text">
+							<h1>We're <br>here to <br> help! </h1>
+							<p> <b>Telephone:</b> (+1) 305 364 56 54 <br></p>
+							<p><b>Address:</b> 3105 NW <br> 107th Ave. Suite 606, <br> Doral, Florida 33172</p>
+						</div>
+					</div>
+					<button class="close-button" data-close aria-label="Close modal" type="button">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="header-logo-cont">
+					<a href="#Home"><%= image_tag "images/EliteLogo.png", :class => "header-logo" %></a>
+				</div>
+				<div class="header-text">
+					<p>Our goal is your comfort</p>
+					<h1>Keep your assets safe and your mind at peace. Stop worrying and start enjoying a beautiful thing called life.</h1>
+				</div>
+				<div class="header-menu">
+					<div class="header-menu-text">
+						<h1>-Welcome!-</h1>
+						<form>
+						  <input type="text" id="name" name="name" placeholder="Username">
+						  <input type="password" id="pass" name="pass" placeholder="Password">
+						  <a href="" title="Forgot Password?"><p>Forgot Password?</p></a>
+
+						  <input type="submit" value="Login &#8594;">
+						</form>
+					</div>
+				</div>
+				<div class="scroll-down">
+					<a href="#Pics" title="Go down"><%= image_tag "images/ScrollDown.png", :class => "sd-button" %></a>
+				</div>
+				<div class="mobile-menu">
+					<input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+					<label for="drawer-toggle" id="drawer-toggle-label"></label>
+					<nav id="drawer">
+						<h1>We're here to Help!</h1>
+						<ul id="mobile-menu-1">
+							<li id="top-li-mobile-menu"><a href="index.html">Home</a></li>
+							<li><a href="about_us.html">About Us</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="#">Blog</a></li>
+						</ul>
+						<p>Explore our Services</p>
+						<ul id="mobile-menu-2">
+							<li id="mm2a"><a href="property.html">Properties Maintenance</a></li>
+							<li id="mm2b"><a href="property.html">Administration of Properties</a></li>
+							<li id="mm2c"><a href="property.html">Payments</a></li>
+							<li id="mm2d"><a href="property.html">Paperwork</a></li>
+							<li id="mm2e"><a href="family.html">Insurance Management</a></li>
+							<li id="mm2f"><a href="family.html">Planning</a></li>
+							<li id="mm2g"><a href="property.html">Credit Card Management</a></li>
+							<li id="mm2h"><a href="concierge.html">Concierge Services</a></li>
+						</ul>
+						<div class="mobile-menu-phone">
+							<p> <b>Telephone:</b> (+1) 305 364 56 54 </p>
+							<p> <b>Address:</b> 3105 NW 107th Ave. Suite 606, <br> Doral, Florida 33172</p>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section fp-auto-height" data-anchor="Pics">
+		<div class="header2">
+			<div class="row header2-col-cont">
+				<div class="large-4 medium-4 small-12 columns header-2-col-cont-i" >
+					<a href="property.html"><div class="header2-col-1" >
+						<%= image_tag "images/PropertyManagement.png", :class=>"header2-col-img" %>
+						<div class="header2-img-text header2-img-text-2">
+							<h1>Property<br>Management</h1>
+							<p>Explore</p></a>
+						</div>
+					</div>	</a>
+				</div>
+				<div class="large-4 medium-4 small-12 columns header-2-col-cont-i header-2-col-cont-2" >
+					<a href="family.html"><div class="header2-col-2" >
+						<%= image_tag "images/FamilyOffice.png", :class=>"header2-col-img" %>
+						<div class="header2-img-text header2-img-text-2">
+							<h1>Family <br> Office</h1>
+							<p>Explore</p>
+						</div>
+					</div>	</a>
+				</div>
+				<div class="large-4 medium-4 small-12 columns header-2-col-cont-i" >
+					<a href="concierge.html"><div class="header2-col-3" >
+						<%= image_tag "images/ConciergeServices.png", :class=>"header2-col-img" %>
+						<div class="header2-img-text header2-img-text-2">
+							<h1>Concierge <br> Services</h1>
+							<p>Explore</p>
+						</div>
+					</div>	</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section fp-auto-height" data-anchor="What">
+		<div class="what-we-do">
+			<div class="expanded row text-align-center what-col-cont">
+				<div class="large-6 medium-6 small-12 columns what-col-1">
+					<h1>What we do</h1>
+					<p>Our focus is to free your future of the complexities of managing different assests and personal administrative matters.</p>
+					<a href="services.html">
+						<div class="what-arrow-box">
+							<p><i class="fa fa-long-arrow-right" aria-hidden="true"></i></p>
+						</div>
+					</a>
+				</div>
+				<div class="large-6 medium-6 small-12 columns what-col-2">
+					<div class="inner-slide">
+						<div class="slide">
+							<div class="ss">
+								<p>1/5</p>
+								<h1>Wealth means nothing when you’re lacking in comfort. Elite Management Solution works to make time sensitive endeavors simple and fast so that you don’t have to choose between one and the other.
+								</h1>
+							</div>
+<!-- 							<div class="what-signature">
+								<span>-Cameron Moll</span>
+								<p>Founder of Authertic Jobs</p>
+							</div> -->
+						</div>
+						<div class="slide">
+							<div class="ss">
+								<p>2/5</p>
+								<h1>With us, you are paying for a property management service and getting rewarded with time to enjoy as you wish.</h1>
+							</div>
+<!-- 							<div class="what-signature">
+								<span>-Cameron Moll</span>
+								<p>Founder of Authertic Jobs</p>
+							</div> -->
+						</div>
+						<div class="slide">
+							<div class="ss">
+								<p>3/5</p>
+								<h1>Attention to detail, intelligent approaches, and graceful solutions define our methods and our work ethics.</h1>
+							</div>
+<!-- 							<div class="what-signature">
+								<span>-Cameron Moll</span>
+								<p>Founder of Authertic Jobs</p>
+							</div> -->
+						</div>
+						<div class="slide">
+							<div class="ss">
+								<p>4/5</p>
+								<h1>Elite Management Solution finds simple, quality alternatives to complex procedures</h1>
+							</div>
+<!-- 							<div class="what-signature">
+								<span>-Cameron Moll</span>
+								<p>Founder of Authertic Jobs</p>
+							</div> -->
+						</div>
+						<div class="slide">
+							<div class="ss">
+								<p>5/5</p>
+								<h1>Our team’s focuses on freeing you from having to make an expensive investment time wise, and works hard to let you enjoy your wealth. </h1>
+							</div>
+<!-- 							<div class="what-signature">
+								<span>-Cameron Moll</span>
+								<p>Founder of Authertic Jobs</p>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section fp-auto-height" data-anchor="Pillars">
+		<div class="pillars-cont">
+			<div class="expanded row text-align-center pillars-col-cont">
+				<div class="large-4 medium-4 small-12 columns pillars-col-1">
+					<div class="pillars-col-1-text">
+						<div class="pillars-text">
+							<h1>Everything we do for ours clients is based on 3 basic pillars</h1>
+						</div>
+					</div>
+				</div>
+				<div class="large-4 medium-4 small-4 columns pillars-col-2">
+					<%= image_tag "images/TipaPilar.png", :class=>"pillars-img" %>
+				</div>
+				<div class="large-4 medium-4 small-12 columns pillars-col-3">
+					<div class="pillars-col-1-text">
+						<div class="ribbon-small ribbon-small-1"></div>
+						<div class="pillars-text-1">
+							<h2>Personalized Attention</h2>
+							<p>Our company structure allows us to provide a single person to take care of your matters and requirements. This issues the correct functioning of every service we provide.</p>
+						</div>
+						<div class="ribbon-small ribbon-small-2"></div>
+						<div class="pillars-text-2">
+							<h2>Trust</h2>
+							<p>We make sure you have detailed information about every action we take on your assests management.</p>
+						</div>
+						<div class="ribbon-small ribbon-small-3"></div>
+						<div class="pillars-text-3">
+							<h2>Attention to Detail</h2>
+							<p>Every single one of our services are designed to provide a solid solution for a specific problem or situation you have.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section fp-auto-height" data-anchor="Help">
+		<div class="help-cont">
+			<h1>– How can we help you –</h1>
+				<div class="expanded row text-align-center help-col-cont">
+					<div class="large-3 large-offset-3 text-align-center columns help-col-1 help-col">
+						<div class="help-link-1 help-link">
+							<a href="http://forelite-2632239.hs-sites.com/give-us-a-call-elite" class="call-desktop"><p>GIVE US A CALL</p></a>
+							<a href="tel:+13053645654" class="call-mobile"><p>GIVE US A CALL</p></a>
+						</div>
+					</div>
+					<div class="large-3 text-align-center columns help-col-2 help-col">
+						<div class="help-link-2 help-link">
+							<a href="http://forelite-2632239.hs-sites.com/schedule-a-meeting-lp"><p>SCHEDULE A MEETING</p></a>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+	<div class="section fp-auto-height" data-anchor="Blog">
+		<div class="blog-cont">
+			<div class="blog-links">
+				<div class="row blog-link-col-cont">
+					<div class="large-6 small-5 text-align-left columns blog-link-col-1 block-link-text">
+						<a href=""><p>NEWS</p></a>
+					</div>
+					<div class="large-6 small-5 text-align-right columns blog-link-col-2 block-link-text">
+						<a href=""><p>READ MORE</p></a>
+					</div>
+				</div>
+			</div>
+			<div class="row text-align-center blog-post-col-cont">
+				<div class="large-4 offset-large-1 columns blog-post-col-i">
+					<div class="blog-link-text">
+						<p>Stop anoying people. Start sending Killer Newsletters</p>
+					</div>
+					<div class="blog-link-1">
+						<%= image_tag "images/BlogPost01.png", :class=>"blog-post-img-1" %>
+						<a href="">
+							<div class="blog-overlay">
+								<div class="cross"></div>
+							</div>
+						 </a>
+					</div>
+				</div>
+				<div class="large-4 columns blog-post-col-i">
+					<div class="blog-link-text">
+						<p>Stop anoying people. Start sending Killer Newsletters</p>
+					</div>
+					<div class="blog-link-2">
+						<%= image_tag "images/BlogPost02.png", :class=>"blog-post-img-2" %>
+						<a href="">
+							<div class="blog-overlay">
+								<div class="cross"></div>
+							</div>
+						 </a>
+					</div>
+				</div>
+				<div class="large-4 columns blog-post-col-i">
+					<div class="blog-link-text culo">
+						<p>Stop anoying people. Start sending Killer Newsletters</p>
+					</div>
+					<div class="blog-link-3">
+						<%= image_tag "images/BlogPost03.png", :class=>"blog-post-img-1" %>
+						<a href="">
+							<div class="blog-overlay">
+								<div class="cross"></div>
+							</div>
+						 </a>
+					</div>
+				</div>
+				<div class="inner-slide-m">
+					<div class="slide">
+						<div class="blog-link-text">
+							<p>Stop anoying people. Start sending Killer Newsletters</p>
+						</div>
+						<div class="blog-link-1">
+							<%= image_tag "images/BlogPost01.png", :class=>"blog-post-img-1" %>
+							<a href="">
+								<div class="blog-overlay">
+									<div class="cross"></div>
+								</div>
+							 </a>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="blog-link-text">
+							<p>Stop anoying people. Start sending Killer Newsletters</p>
+						</div>
+						<div class="blog-link-2">
+							<%= image_tag "images/BlogPost02.png", :class=>"blog-post-img-2" %>
+							<a href="">
+								<div class="blog-overlay">
+									<div class="cross"></div>
+								</div>
+							 </a>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="blog-link-text">
+							<p>Stop anoying people. Start sending Killer Newsletters</p>
+						</div>
+						<div class="blog-link-3">
+							<%= image_tag "images/BlogPost03.png", :class=>"blog-post-img-3" %>
+							<a href="">
+								<div class="blog-overlay">
+									<div class="cross"></div>
+								</div>
+							 </a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section fp-auto-height" data-anchor="CTA">
+		<div class="cta-cont">
+			<div class="row text-align-center cta">
+				<div class="large-12 text-align-left columns cta-img-cont">
+					<a href=""><%= image_tag "images/CTA-Awareness.jpg", :class=>"cta-img-1" %></a>
+					<div class="scroll-up">
+						<a href="#Home" title="Go up"><%= image_tag "images/ScrollUp.png", :class => "su-button" %></a>
+					</div>
+					<div class="cta-ribbon"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section fp-auto-height" data-anchor="Contact">
+		<div class="footer-cont">
+			<div class="row text-align-center footer-col">
+				<div class="large-5 columns footer-col-1">
+					<p>Telephone: (+1) 305 364 56 54
+					<br>
+					Address: 3105 NW 107th Ave. Suite 606 Doral, Florida, 33172
+					</p>
+				</div>
+				<div class="large-2 columns footer-col-2">
+					<a href="#Home"><%= image_tag "images/Elite-ICON.png", :class => "footer-logo" %></a>
+				</div>
+				<div class="large-5 columns footer-col-1-m">
+					<p>Telephone: (+1) 305 364 56 54 <br>
+					<br>
+					Address: 3105 NW 107th <br> Ave. Suite 606, Doral, Florida 33172.
+					</p>
+				</div>
+				<div class="large-5 columns footer-col-3">
+					<div class="row text-align-center footer-links">
+						<div class="large-2 columns">
+							<a href="index.html" title=""><p>HOME</p></a>
+						</div>
+						<div class="large-2 columns">
+							<a href="about_us.html" title=""><p>ABOUT US</p></a>
+						</div>
+						<div class="large-2 columns">
+							<a href="services.html" title=""><p>SERVICES</p></a>
+						</div>
+						<div class="large-2 columns">
+							<a href="#"><p>BLOG</p></a>
+						</div>
+						<div class="large-2 columns">
+							<a href="#" title=""><p>FAQ</p></a>
+						</div>
+						<div class="large-2 columns">
+							<a href="#" title=""><p>LOGIN</p></a>
+						</div>
+					</div>
+					<div class="row text-align-center footer-links footer-links-later">
+						<div class="large-6 columns">
+							<a href="#" title=""><p>PRIVACY POLICY</p></a>
+						</div>
+						<div class="large-6 columns">
+							<a href="#" title=""><p>TERMS AND CONDITIONS</p></a>
+						</div>
+					</div>
+				</div>
+				<div class="social">
+					<div class="box-wrapper">
+						<a href="https://twitter.com/elitemsol" title=""><%= image_tag "Group.png", :class=> "ssnn-img"%></a>
+						<a href="" title=""><%= image_tag "Group-1.png", :class=> "ssnn-img"%></a>
+						<a href="https://www.facebook.com/Elite-Management-Solutions-1325066507517980/" title=""><%= image_tag "Group-2.png", :class=> "ssnn-img"%></a>
+					</div>
+				</div>
+				<div class="large-5 columns footer-col-3-m">
+					<div class="row text-align-center">
+						<div class="large-2 small-3 columns">
+							<a href="index.html" title=""><p>HOME</p></a>
+						</div>
+						<div class="large-2 small-3 columns">
+							<a href="about_us.html" title=""><p>ABOUT US</p></a>
+						</div>
+						<div class="large-2 small-3 columns">
+							<a href="services.html" title=""><p>SERVICES</p></a>
+						</div>
+						<div class="large-2 small-3 columns">
+							<a href="#"><p>BLOG</p></a>
+						</div>
+					</div>
+					<div class="row text-align-center footer-links">
+						<div class="large-6 small-4 columns">
+							<a href="property.html" title=""><p>PROPERTY MANAGEMENT</p></a>
+						</div>
+						<div class="large-6 small-4 columns">
+							<a href="family.html" title=""><p>FAMILY OFFICE</p></a>
+						</div>
+						<div class="large-6 small-4 columns">
+							<a href="concierge.html" title=""><p>CONCIERGE <br> SERVICES</p></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<span>&copy; 2016 Elite Management Solutions. Powered by </span>
+			<a href="http://www.thesocialus.com" title="The Social Us" target="_blank"><img src="images/TheSocialUs.png" alt="TheSocialUs"></a>
+		</div>
+	</div>
+</div>

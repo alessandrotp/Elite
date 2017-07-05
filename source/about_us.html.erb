@@ -1,0 +1,88 @@
+---
+title: About Us - For Elite
+---
+
+<%= stylesheet_link_tag 'about_us' %>
+
+<div id="about_us" class="main-div">
+  <div class="section" id="section1" data-anchor="Home">
+   <!--  <div class="header-p-image"> -->
+      <%= partial "header_menu" %>
+    <!-- </div> -->
+  </div>
+  <div class="section" id="section2" data-achor="Information">
+    <div class="row expanded">
+      <div class="columns small-12 medium-12 large-12 about-top-img">
+        <%= image_tag "images/equipo1.jpg", :class=>"about-header-top-img", :id=>"team-individual-img-1" %>
+      </div>
+    </div>
+  </div>
+  <div class="section" id="section2" data-achor="Information">
+    <div class="row expanded" id="text-1">
+      <div class="columns large-offset-5 small-12 medium-12 large-6">
+        <p class="text-1-paragraph" id="paragraph-1">
+          Anytime you think of us, three concepts should immediately come to your mind: impeccable work ethics, solid customer relationships and professionalism.
+        </p>
+        <p class="text-1-paragraph" id="paragraph-2">
+          We aspire to successfully offer the best quality of service and work in a customized and distinctly personal way for our clients. We believe that trust is the solid foundation of the most sturdy structure.
+        </p>
+        <p class="text-1-paragraph" id="paragraph-3">
+          As a brand we are dynamic and professional, with a keen eye for amazing opportunities that bring financial joy to our customers.
+        </p>
+        <p class="text-1-paragraph" id="paragraph-4">
+          Our goal is to keep your mind at ease.
+        </p>
+      </div>
+    </div>
+
+    <div class="row expanded" id="text-2">
+      <div class="columns small-12 medium-12 large-8">
+        <h1 class="highlight-text">
+          Our team has the necessary experience to provide a high end service for every client profile:
+        </h1>
+        <div class="underline"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="section3" data-anchor="Team">
+    <div class="row expanded" id="team-container">
+      <div class="columns large-6 medium-6 small-12" id="team-col-1">
+        <div class="row team-element-container-left" id="team-1">
+          <div class="team-individual-sub" id="team-frame-1" >
+            <%= image_tag "images/equipo2.jpg", :class=>"team-individual-img", :id=>"team-individual-img-1" %>
+            <h3 class="team-member-name-left">
+              Dr. Andres Gazso <br>Legal Counsel
+            </h3>
+          </div>
+        </div>
+        <div class="row team-element-container-left" id="team-2">
+          <div class="team-individual-sub" id="team-frame-2" >
+            <%= image_tag "images/equipo3.png", :class=>"team-individual-img", :id=>"team-individual-img-2" %>
+            <h3 class="team-member-name-left">
+              Carolina Maduro <br> Manager
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="columns large-6 medium-6 small-12" id="team-col-2">
+        <div class="row team-element-container-right" id="team-3">
+          <div class="team-individual-sub" id="team-frame-3" >
+            <%= image_tag "images/equipo4.jpg", :class=>"team-individual-img", :id=>"team-individual-img-3" %>
+            <h3 class="team-member-name-right">
+              Genesis Heredia <br> Administrative Assistant
+            </h3>
+          </div>
+        </div>
+        <div class="row team-element-container-right" id="team-4">
+          <div class="team-individual-sub" id="team-frame-4" >
+            <%= image_tag "images/team-member-4.png", :class=>"team-individual-img", :id=>"team-individual-img-4" %>
+            <h3 class="team-member-name-right">
+              Team Member #4
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

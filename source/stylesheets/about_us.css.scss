@@ -1,0 +1,734 @@
+//-----------------colors--------------------------
+
+$navy: #0A1331;
+$bleu: #0057CC;
+$black: #333333;
+
+//-----------------//colors------------------------
+
+//-----------------media queries-------------------
+// $bp-778: 778px; //Ipad
+// $bp-414: 414px; //iPhone6+
+// $bp-375: 375px; //iPhone6
+// $bp-360: 360px; //360x640 Nominal S6
+// $bp-320: 320px; //320x568 
+//-----------------//media queries-----------------
+
+@mixin slide-up-effect($ttime,$distance,$ftime,$delay) {
+  visibility: visible !important;
+  -webkit-transition: all $ttime ease-out;
+  -moz-transition: all $ttime ease-out;
+  -o-transition: all $ttime ease-out;
+  transition: all $ttime ease-out;
+  transition-delay: $delay;
+
+  -webkit-transform: translate3d(0px, $distance, 0px);
+  -moz-transform: translate3d(0px, $distance, 0px);
+  -ms-transform:translate3d(0px, $distance, 0px);
+  transform: translate3d(0px, $distance, 0px);
+
+  animation: fadein $ftime;
+  -moz-animation: fadein $ftime; /* Firefox */
+  -webkit-animation: fadein $ftime; /* Safari and Chrome */
+  -o-animation: fadein $ftime; /* Opera */
+  animation-delay: $delay;
+}
+
+@mixin slide-left-effect($ttime,$distance,$ftime,$delay) {
+  visibility: visible !important;
+  -webkit-transition: all $ttime ease-in;
+  -moz-transition: all $ttime ease-in;
+  -o-transition: all $ttime ease-in;
+  transition: all $ttime ease-in;
+  -webkit-transition-delay: $delay; /* Safari */
+  transition-delay: $delay;
+
+  -webkit-transform: translate3d($distance, 0px, 0px);
+  -moz-transform: translate3d($distance, 0px, 0px);
+  -ms-transform:translate3d($distance, 0px, 0px);
+  transform: translate3d($distance, 0px, 0px);
+
+  animation: fadein $ftime;
+  -moz-animation: fadein $ftime; /* Firefox */
+  -webkit-animation: fadein $ftime; /* Safari and Chrome */
+  -o-animation: fadein $ftime; /* Opera */
+  animation-delay: $delay;
+}
+
+@mixin fade-effect($ftime,$delay) {
+  opacity: 0;
+  visibility: visible;
+  -webkit-animation: fadein ease-in $ftime; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein ease-in $ftime; /* Firefox < 16 */
+      -ms-animation: fadein ease-in $ftime; /* Internet Explorer */
+       -o-animation: fadein ease-in $ftime; /* Opera < 12.1 */
+          animation: fadein ease-in $ftime;
+  
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+  
+  -webkit-animation-delay: $delay;
+  -moz-animation-delay: $delay;
+  animation-delay: $delay;
+
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#about_us{
+  padding-bottom: 5%;
+}
+
+// //-----------------header------------------------
+
+// .header {
+//   width: 100%;
+//   height: 15vh;
+//   position: absolute;
+//   top: 0;
+//   max-width: initial;
+//   background-color: white;
+//   @media screen and (max-width: 765px) {
+//     height: 130px;
+//   }
+
+//   @media screen and (max-width: 414px) {
+    
+//   }
+
+
+//   .header-logo{
+//     position: relative;
+//     margin-top: 6vh; 
+//     z-index: 20;
+//     @media screen and (max-width: 765px){ 
+//       // margin-top: 25px;
+//       // width: 30%;
+//       margin-top: 20px;
+//       width: 11%;
+//     }
+//     // @media
+//     @media screen and (max-width: 414px) {
+//       width: 22%;
+//       margin-top: 15px; 
+//     }
+//     @media screen and (max-width: 360px) {
+//       width: 26%;
+//     }
+//   }
+
+//   .c-hamburger {
+//     visibility: visible;
+//     display: block;
+//     position: absolute;
+//     overflow: hidden;
+//     top: 5vh;
+//     left: 65px;
+//     margin: 0;
+//     padding: 0;
+//     width: 55px;
+//     height: 40px;
+//     font-size: 0;
+//     text-indent: -9999px;
+//     appearance: none;
+//     box-shadow: none;
+//     border-radius: none;
+//     border: none;
+//     cursor: pointer;
+//     transition: background 0.3s;
+//     z-index: 90;
+//     background: transparent;
+//     span{
+//       width: 35px;
+//     }
+//     @media screen and (max-width: 765px){ 
+//       top: 40px;
+//       left: 40px;
+//     }
+//     @media screen and (max-width: 360px) {
+//       top: 45px;
+//       left: 30px;   
+//     }
+//   }
+
+//   .c-hamburger:focus {
+//     outline: none;
+//   }
+
+//   .c-hamburger span {
+//     display: block;
+//     position: absolute;
+//     top: 19px;
+//     left: 9px;
+//     right: 9px;
+//     height: 4px;
+//     background: $black;
+//     border-radius: 30px 
+//   }
+
+//   .c-hamburger span::before,
+//   .c-hamburger span::after {
+//     position: absolute;
+//     display: block;
+//     left: 0;
+//     width: 35px;
+//     height: 4px;
+//     background-color: $black;
+//     content: "";  
+//     border-radius: 30px 
+//   }
+
+//   .c-hamburger span::before,
+//   .c-hamburger span::after {
+//     position: absolute;
+//     display: block;
+//     left: 0;
+//     width: 35px;
+//     height: 4px;
+//     background-color: $black;
+//     content: "";  
+//     border-radius: 30px 
+//   }
+
+//   .c-hamburger span::before {
+//     top: -10px;
+//   }
+
+//   .c-hamburger span::after {
+//     bottom: -10px;
+//   }
+
+//   .c-hamburger--htx span {
+//     transition: background 0s 0.3s;
+//   }
+
+//   .c-hamburger--htx span::before,
+//   .c-hamburger--htx span::after {
+//     transition-duration: 0.3s, 0.3s;
+//     transition-delay: 0.3s, 0s;
+//   }
+
+//   .c-hamburger--htx span::before {
+//     transition-property: top, transform;
+//   }
+
+//   .c-hamburger--htx span::after {
+//     transition-property: bottom, transform;
+//   }
+
+//   .drawer-text{
+//     visibility: visible;
+//     position: absolute;
+//     left: 130px;
+//     top: 5.5vh;
+//     z-index: 5;
+//     a{
+//       font-size: 21px;
+//       color: white;//$black;
+//       &:hover{
+//         font-weight: 700;
+//         color: white;
+//       }
+//     }
+//     p{
+//       font-size: 21px;
+//       color: white;//$black;
+//     }
+//     @media screen and (max-width: 765px){ 
+//       display: none;
+//     }
+//   }
+
+//   .service-title {
+//     color: $black !important;
+//     &:hover {
+//       color: white;
+//     }
+//   }
+
+//   #exampleModal1{
+//     background: #2D2C2C;
+//     ul{
+//       list-style: none;
+//       position: absolute;
+//       top: 300px;
+//       left: 225px;
+//       font-size: 40px;
+//       font-family: 'Playfair Display';
+//       line-height: 70px;
+//       text-align: left;
+//     }
+//     a{
+//       transition: all 0.3s ease-in-out;
+//       color: white;
+//       &:hover{
+//         color:#0083FF;
+//         margin-left: 30px;
+//       }
+//     }
+//   }
+
+//   .close-button{
+//     top: 80px;
+//     right: 200px;
+//     font-size: 3em;
+//     color: white;
+//     &:hover{
+//       color: white;//#8a8a8a;
+//     }
+//   }
+
+//   .modal-logo{
+//     left: 130px;
+//     position: absolute;
+//     top: 60px;
+//   }
+
+//   .modal-text{
+//     color: white;
+//     text-align: left;
+//     position: absolute;
+//     right: 30%;
+//     top: 290px;
+//     h1{
+//       font-size: 40px;
+//       line-height: 45px;
+//     }
+//     p{
+//       font-size: 15px;
+//       line-height: 20px;
+//     }
+//   }
+
+//   .header-menu-text{
+//     position: relative;
+//     top: 27%;
+//     h1{
+//       color: white;
+//       font-size: 50px;
+//     }
+//     input[type=text], input[type=password] {
+//       font-family: 'Open Sans', sans-serif;
+//       padding: 10px 20px;
+//       margin: 8px 0;
+//       box-sizing: border-box;
+//       background: transparent;
+//       border: none;
+//       border-bottom: 2px #8595AB solid;
+//       width: 290px;
+//       margin-left: 40px;
+//       margin-top: 35px;
+//       text-align: center;
+//       color: white;
+//       font-size: 18px;
+//       padding-bottom: 12px;;
+//       &:focus{
+//         box-shadow: none;
+//       }
+//     }
+//     input[type=submit] {
+//       font-family: 'Open Sans', sans-serif;
+//       color: white;
+//       width: 165px;
+//       font-size: 17px;
+//       text-transform: uppercase;
+//       letter-spacing: 2px;
+//       padding: 7px;
+//       background-color: #5066EC;
+//       border: none;
+//       border-radius: 30px;
+//       box-shadow: 3px 2px 1px black;
+//       margin-top: 30px;
+//     }
+//     a p{
+//       margin-top: 30px;
+//       color: white;
+//       font-size: 14px;
+//       outline: none;
+//     }
+//   }
+
+//   ::-webkit-input-placeholder {
+//     color: white;
+//     text-align: center;
+//   }
+
+//   :-moz-placeholder { /* Firefox 18- */
+//     color: white;
+//     text-align: center;
+//   }
+
+//   ::-moz-placeholder {  /* Firefox 19+ */
+//     color: white;
+//     text-align: center;
+//   }
+
+//   :-ms-input-placeholder {  
+//     color: white;
+//     text-align: center;
+//   }
+
+//   .header-services{
+//     position: absolute;
+//     left: -70%;
+//     width: 470px;
+//     opacity: 0.9;
+//     height: 0%; 
+//     height: 98vh; 
+//     top: -210%;
+//     background-color: #0A1331;
+//     transition: all 1s ease-in-out;
+//     z-index: -1;
+//     height: 0;
+//     p{
+//       text-align: left;
+//       padding-top: 7px;
+//       font-size: 17px;
+//     }
+//   }
+
+//   .drawer-text:hover .header-services{
+//     visibility: visible;
+//     height: 98vh; 
+//     .header-services-row{
+//       @include fade-effect(1.5s,0s)
+//     }
+//   }
+
+//   .service-icon {
+//     width: 45px; 
+//   }
+
+//   .header-services-row{
+//     padding-top: 30px;
+//     visibility: hidden;
+//   }
+
+//   .header-services-right, .header-services-left{
+//     margin: 0;
+//     padding: 0;
+//   }
+
+//   .header-services-1{
+//     padding-top: 200px;
+//   }
+
+//   .animation-left-header-services{
+//     @include slide-left-effect(1s,50px,2.5s,0s);
+//   }
+
+//   .fade-element{
+//     @include fade-effect(2.5s,0s)  
+//   }
+
+//   .animation-left-header-services{
+//     @include slide-left-effect(1s,50px,2.5s,1s);
+//     @media screen and (max-width: 765px){
+//       @include slide-left-effect(0s,50px,0s,0s);
+//     }
+//   }
+
+//   .animation-left-header-text{
+//     @include slide-left-effect(1s,50px,2.5s,2s);
+//   }
+// }
+
+// .header-p-image {
+//   background-color: gray;
+//   height: 85vh;
+//   position: relative;
+//   background-image: url('../images/group_pic_2.jpg');
+//   // background-attachment: fixed;
+//   background-position-y: 15vh;
+//   background-size: 100%;
+//   @media screen and (max-width: 765px) {
+//     height: 440px;
+//     background-position-y: 130px; 
+//   }
+
+//   @media screen and (max-width: 550px) {
+//     height: 380px;
+//     background-size: 105%;
+//     background-position-x: -20px;
+//   }
+
+//   @media screen and (max-width: 414px) {
+//     height: 320px;
+//   }
+
+//   @media screen and (max-width: 375px) {
+//     height: 300px; 
+//   }
+
+//   @media screen and (max-width: 360px) {
+//     height: 290px;
+//   }
+// }
+
+// //-----------------header------------------------
+
+.header-p-image {
+  // height: 85vh;
+  // position: relative !important;
+  // // background-image: url('../images/group_pic_2.jpg') !important;
+  // background-image: url('../images/equipo1.jpg') !important;
+  // background-position: center;
+  // background-position-y: 0px !important;
+  // background-size: 100%;
+  // background-attachment: fixed !important;
+  // height: 800px !important; 
+  background: none !important;
+  height: 0px !important;
+  // @media screen and (max-width: 414px) {
+  //     height: 85vh;
+  // position: relative !important;
+  // // background-image: url('../images/group_pic_2.jpg') !important;
+  // background-image: url('../images/equipo1.jpg') !important;
+  // background-position: center;
+  // background-position-y: 0px !important;
+  // background-size: 100%;
+  // background-attachment: fixed !important;
+  // height: 800px !important; 
+  //   width: 100%;
+  //   height: 335px !important;
+  //   background-size: contain !important;
+  //   background-position-y: 130px !important;
+  //   background-position-x: 0px !important;
+  // }
+  // @media screen and (max-width: 375px) {
+  //   height: 324px !important;
+  // }
+  // @media screen and (max-width: 360px) {
+  //   height: 317px !important;
+  // }
+  // @media screen and (max-width: 360px) {
+  //   height: 296px !important;
+  // }
+}
+
+.header .header-logo {
+  @media screen and (max-width: 1180px) {
+    margin-top: 8vh !important;
+    width: 8%;
+  }
+}
+
+.about-top-img {
+  padding: 0;
+  @media screen and (max-width: 414px) {
+    padding-top: 100px;
+  }
+}
+
+.about-header-top-img{
+  width: 100%;
+  padding: 0;
+  @media screen and (max-width: 1636px) {
+    padding-top: 2%;
+  }
+  @media screen and (max-width: 1450px) {
+    padding-top: 3.5%;
+  }
+  @media screen and (max-width: 1280px) {
+    padding-top: 5%;
+  }
+  @media screen and (max-width: 1180px) {
+    padding-top: 5%;
+  }
+}
+
+
+#section2{
+  padding-top: 5%;
+  @media screen and (max-width: 414px) {
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 45px;
+  }
+  .highlight-text {
+    color: $bleu;
+    font-weight: 600;
+    font-size: 52px; 
+    @media screen and (max-width: 414px) {
+      font-size: 29px;
+      padding-left: 3% !important;
+    }
+    @media screen and (max-width: 375px) {
+      padding-left: 3% !important; 
+    }
+    @media screen and (max-width: 360px) {
+      font-size: 28px;
+      padding-left: 3% !important;
+    }
+    @media screen and (max-width: 320px) {
+      padding-left: 0% !important; 
+      font-size: 25px;
+    }
+  }
+
+  p{
+    @media screen and (max-width: 414px) {
+      font-size: 19px;
+    }
+  }
+  
+  #text-1 {
+    font-size: 1.4em;
+    color: $black;
+    text-align: left;
+    width: 90%;
+    .text-1-paragraph {
+      font-weight: 300;
+    }
+  }
+
+  #text-2 {
+    text-align: left;
+    width: 85%;
+    padding-top: 2%;
+    h1 {
+      padding-left: 5%;
+    }
+    .underline {
+      border: 5px solid $bleu;
+      width: 15%;
+      @media screen and (max-width: 765px) {
+        width: 20%;
+      }
+      @media screen and (max-width: 414px) {
+        border: 4px solid $bleu;
+        width: 25%;
+      }
+      
+    }
+  }
+}
+
+#section3 {
+  @media screen and (max-width: 765px) {
+    padding-top: 10%;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  @media screen and (max-width: 414px) {
+    padding-top: 15%;
+    padding-left: 0;
+    padding-right: 0;
+    .columns {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+
+  h3 {
+    font-family: 'Playfair Display', serif;
+  }
+  padding-top: 5%;
+  margin-bottom: 5%;
+  .team-element-container-left {
+    text-align: right;
+    position: relative;
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.7);
+  }
+
+  .team-element-container-right {
+    text-align: left;
+    position: relative;
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.7);
+  }
+
+  .team-individual-sub {
+    position: relative;
+    margin-top: 3%;
+    @media screen and (max-width: 414px) {
+      margin-top: 0;
+    }
+  }
+
+  .team-individual-img {
+    box-shadow: 1px 4px 1px #aeaeae;
+  }
+
+  .team-member-name-left {
+    position: absolute;
+    bottom: 7%;
+    right: 17%;
+    color: white;
+    text-align: left;
+    @media screen and (max-width: 414px) {
+      bottom: 9%;
+      left: 11%;
+      font-size: 1.5em;
+      font-weight: 700;
+    }
+
+    @media screen and (max-width: 320px) {
+      font-size: 1.2em; 
+    }
+  }
+  
+  .team-member-name-right {
+    position: absolute;
+    bottom: 7%;
+    left: 6%;
+    color: white;
+    @media screen and (max-width: 414px) {
+      bottom: 10%;
+      left: 11%;
+      font-size: 1.5em;
+      font-weight: 700;
+    }
+    @media screen and (max-width: 320px) {
+      font-size: 1.2em; 
+    }
+  }
+  #team-col-2 {
+    margin-top: 8%;
+    @media screen and (max-width: 414px) {
+      margin-top: 0;
+    }
+  }
+  #team-col-3 {
+    background-image: url('..images/team-member-3.png')
+  }
+  #team-col-4 {
+    background-image: url('..images/team-member-4.png')
+  }
+  .team-member-name {
+    color: white;
+  }
+}
+
+#team-frame-4 {
+  display: none;
+}

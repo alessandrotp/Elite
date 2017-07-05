@@ -1,0 +1,267 @@
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* line 132, property.css.scss */
+.header-p-image {
+  background-image: url("../images/property.jpg") !important;
+  background-attachment: fixed;
+  background-position-y: 0 !important; }
+  @media screen and (max-width: 414px) {
+    /* line 132, property.css.scss */
+    .header-p-image {
+      width: 100%;
+      height: 335px !important;
+      background-size: contain !important;
+      background-position-y: 130px !important;
+      background-position-x: 0px !important;
+      background-color: transparent !important; } }
+  @media screen and (max-width: 375px) {
+    /* line 132, property.css.scss */
+    .header-p-image {
+      height: 324px !important; } }
+  @media screen and (max-width: 360px) {
+    /* line 132, property.css.scss */
+    .header-p-image {
+      height: 317px !important; } }
+  @media screen and (max-width: 320px) {
+    /* line 132, property.css.scss */
+    .header-p-image {
+      height: 296px !important; } }
+
+/* line 155, property.css.scss */
+.highlight-text {
+  color: #0057CC;
+  font-size: 62px;
+  line-height: 90%;
+  font-family: 'Playfair Display', serif; }
+
+/* line 167, property.css.scss */
+#section2 {
+  padding-top: 5%; }
+  /* line 169, property.css.scss */
+  #section2 .highlight-text {
+    text-align: left; }
+    @media screen and (max-width: 765px) {
+      /* line 169, property.css.scss */
+      #section2 .highlight-text {
+        font-size: 2.4em;
+        padding-left: 6% !important; } }
+  /* line 177, property.css.scss */
+  #section2 .underline {
+    border: 5px solid #0057CC;
+    width: 15%; }
+  /* line 181, property.css.scss */
+  #section2 #property-info-col-2 {
+    color: #333333;
+    text-align: left;
+    font-size: 1.4em;
+    padding-right: 5%; }
+    @media screen and (max-width: 765px) {
+      /* line 181, property.css.scss */
+      #section2 #property-info-col-2 {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 5%;
+        font-size: 1.4em !important; } }
+    /* line 192, property.css.scss */
+    #section2 #property-info-col-2 .property-info-text {
+      font-weight: 300; }
+      /* line 194, property.css.scss */
+      #section2 #property-info-col-2 .property-info-text .bold {
+        font-weight: 700; }
+
+/* line 201, property.css.scss */
+#section3 {
+  padding-top: 5%;
+  margin-bottom: 7%; }
+  /* line 204, property.css.scss */
+  #section3 .overline {
+    border: 5px solid #0057CC;
+    width: 25%;
+    position: absolute;
+    right: 8%; }
+  @media screen and (max-width: 765px) {
+    /* line 210, property.css.scss */
+    #section3 .highlight-text {
+      font-size: 2.4em;
+      padding-left: 6% !important; } }
+  /* line 216, property.css.scss */
+  #section3 #property-sub-service-subcontainer-1 {
+    position: relative; }
+    @media screen and (max-width: 765px) {
+      /* line 216, property.css.scss */
+      #section3 #property-sub-service-subcontainer-1 {
+        margin-bottom: 5%; } }
+  /* line 223, property.css.scss */
+  #section3 .property-sub-service-text {
+    text-align: right;
+    font-size: 49px;
+    line-height: 90%;
+    padding-right: 8%; }
+  /* line 230, property.css.scss */
+  #section3 .property-sub-services-subcontainer {
+    margin-top: 2%;
+    position: relative; }
+    @media screen and (max-width: 765px) {
+      /* line 230, property.css.scss */
+      #section3 .property-sub-services-subcontainer {
+        margin-top: 0% !important;
+        padding-right: 0;
+        padding-left: 0; } }
+  /* line 240, property.css.scss */
+  #section3 #sub-service-1 {
+    background-image: url("../images/01.jpg");
+    background-size: 190%;
+    background-position-x: 30%;
+    background-repeat: no-repeat; }
+    @media screen and (max-width: 320px) {
+      /* line 240, property.css.scss */
+      #section3 #sub-service-1 {
+        background-size: 206%; } }
+  /* line 249, property.css.scss */
+  #section3 #sub-service-2 {
+    background-image: url("../images/02.jpg");
+    background-size: 150%;
+    background-position-x: 50%;
+    background-repeat: no-repeat; }
+    @media screen and (max-width: 360px) {
+      /* line 249, property.css.scss */
+      #section3 #sub-service-2 {
+        background-size: 155%; } }
+    @media screen and (max-width: 320px) {
+      /* line 249, property.css.scss */
+      #section3 #sub-service-2 {
+        background-size: 174%; } }
+  /* line 261, property.css.scss */
+  #section3 #sub-service-3 {
+    background-image: url("../images/03.jpg");
+    background-size: 135%;
+    background-position-x: 65%;
+    background-repeat: no-repeat; }
+    @media screen and (max-width: 360px) {
+      /* line 261, property.css.scss */
+      #section3 #sub-service-3 {
+        background-size: 155%; } }
+  /* line 270, property.css.scss */
+  #section3 #sub-service-4 {
+    background-image: url("../images/04.jpg");
+    background-size: 160%;
+    background-position-x: 50%;
+    background-repeat: no-repeat; }
+    @media screen and (max-width: 320px) {
+      /* line 270, property.css.scss */
+      #section3 #sub-service-4 {
+        background-size: 175%; } }
+  /* line 279, property.css.scss */
+  #section3 #sub-service-5 {
+    background-image: url("../images/05.jpg");
+    background-size: 165%;
+    background-position-x: 65%;
+    background-repeat: no-repeat; }
+    @media screen and (max-width: 360px) {
+      /* line 279, property.css.scss */
+      #section3 #sub-service-5 {
+        background-size: 165%; } }
+    @media screen and (max-width: 320px) {
+      /* line 279, property.css.scss */
+      #section3 #sub-service-5 {
+        background-size: 185%; } }
+  /* line 291, property.css.scss */
+  #section3 #sub-service-6 {
+    background-image: url("../images/06.jpg");
+    background-size: 130%;
+    background-position-x: 40%;
+    background-repeat: no-repeat; }
+    @media screen and (max-width: 320px) {
+      /* line 291, property.css.scss */
+      #section3 #sub-service-6 {
+        background-size: 146%; } }
+  /* line 300, property.css.scss */
+  #section3 #sub-service-7 {
+    background-image: url("../images/07.jpg");
+    background-size: 230%;
+    background-position-x: 80%;
+    background-repeat: no-repeat; }
+    @media screen and (max-width: 360px) {
+      /* line 300, property.css.scss */
+      #section3 #sub-service-7 {
+        background-size: 232%; } }
+    @media screen and (max-width: 320px) {
+      /* line 300, property.css.scss */
+      #section3 #sub-service-7 {
+        background-size: 261%; } }
+  /* line 312, property.css.scss */
+  #section3 #sub-service-8 {
+    background-image: url("../images/08.jpg");
+    background-size: 200%;
+    background-position-x: 40%;
+    background-repeat: no-repeat; }
+    @media screen and (max-width: 360px) {
+      /* line 312, property.css.scss */
+      #section3 #sub-service-8 {
+        background-size: 205%; } }
+    @media screen and (max-width: 320px) {
+      /* line 312, property.css.scss */
+      #section3 #sub-service-8 {
+        background-size: 231%; } }
+  /* line 325, property.css.scss */
+  #section3 .sub-service {
+    background-size: 100%; }
+  /* line 329, property.css.scss */
+  #section3 .sub-service-w {
+    background: transparent;
+    width: 370px;
+    height: 370px;
+    background: rgba(0, 74, 173, 0.3);
+    mix-blend-mode: difference;
+    opacity: 1.00; }
+    @media screen and (max-width: 765px) {
+      /* line 329, property.css.scss */
+      #section3 .sub-service-w {
+        width: auto !important; } }
+  /* line 341, property.css.scss */
+  #section3 .sub-service-title {
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    bottom: 20px;
+    text-shadow: 0px 5px 3px #333333;
+    left: 60px;
+    font-size: 1.5em;
+    width: 60%;
+    text-align: left; }
+
+/* line 354, property.css.scss */
+.footer-col {
+  padding-top: 45% !important; }
+
+@media screen and (max-width: 765px) {
+  /* line 358, property.css.scss */
+  .footer-col-2 {
+    padding-top: 10%; } }

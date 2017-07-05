@@ -1,0 +1,35 @@
+Header Text
+
+font-family: "Kepler Std";font-style: normal;font-weight: normal;font-size: 41px;line-height: 100%;letter-spacing: 0.01px;color: #FFFFFF;mix-blend-mode: normal;opacity: 100%;text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+Service Name
+
+/* Family Office */font-family: "Kepler Std";font-style: normal;font-weight: normal;font-size: 52px;line-height: 90%;color: #FFFFFF;mix-blend-mode: normal;opacity: 100%;text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+Text Quotes
+
+font-family: "Lato";font-style: italic;font-weight: bold;font-size: 29px;line-height: 110%;color: #000000;mix-blend-mode: normal;opacity: 100%;
+
+
+/* Everything we do for our clients is based on 3 basic pillars */font-family: "Kepler Std";font-style: normal;font-weight: normal;font-size: 52px;line-height: 90%;color: #006DFF;mix-blend-mode: normal;opacity: 100%;text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+/* – How can we help you? – */font-family: "Kepler Std";font-style: normal;font-weight: normal;font-size: 49px;line-height: 100%;letter-spacing: 0.02px;color: #FFFFFF;mix-blend-mode: normal;opacity: 100%;
+
+
+/* Stop annoting people. Start sending Killer Newsletters */font-family: "Lato";font-style: normal;font-weight: bold;font-size: 16px;line-height: 130%;letter-spacing: 0.15px;color: #2F80ED;mix-blend-mode: normal;opacity: 100%;
+
+
+Colors:
+
+Welcome Blue: #002B56 (opacity: 90%)
+
+Azul Casi-Negro: #0A1331 (how can we help you)
+
+Azul Oscuro: #193287 (hover de la imagen)
+
+Azul Medium: #0057CC (letras de la foto de la tipa y cuadro de flecha)
+ 
+Azul Claro: #56CCF2 (separador)

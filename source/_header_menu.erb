@@ -1,0 +1,155 @@
+<%= stylesheet_link_tag 'header_menu' %>
+<div class="header-p-image">
+  <div class="header row" >
+    <!-- <div class="header-cont"> -->
+      <button class="c-hamburger c-hamburger--htx" data-open="exampleModal1">
+          <span>toggle menu</span>
+      </button>
+      <div class="drawer-text">
+        <p class="service-title">Explore Services</p>
+        <div class="header-services menu-hide">
+          <div class="row header-services-1 header-services-row">
+            <div class="large-4 medium-4 small-4 columns header-services-left">
+              <%= image_tag "images/Administration.png", :class => "service-icon" %>
+            </div>
+            <div class="large-8 medium-8 small-8 columns header-services-right">
+              <a href=""><p>Administration of Properties</p>
+            </div>
+          </div>
+          <div class="row header-services-row">
+            <div class="large-4 medium-4 small-4 columns header-services-left">
+              <%= image_tag "images/Payments.png", :class => "service-icon" %>
+            </div>
+            <div class="large-8 medium-8 small-8 columns header-services-right">
+              <a href=""><p>Payments</p></a>
+            </div>
+          </div>
+          <div class="row header-services-row">
+            <div class="large-4 medium-4 small-4 columns header-services-left">
+              <%= image_tag "images/PropertyMaintenance.png", :class => "service-icon" %>
+            </div>
+            <div class="large-8 medium-8 small-8 columns header-services-right">
+              <a href=""><p>Properties Maintenance</p></a>
+            </div>
+          </div>
+          <div class="row header-services-row">
+            <div class="large-4 medium-4 small-4 columns header-services-left">
+              <%= image_tag "images/CreditCard.png", :class => "service-icon " %>
+            </div>
+            <div class="large-8 medium-8 small-8 columns header-services-right">
+              <a href=""><p>Credit Card Management</p></a>
+            </div>
+          </div>
+          <div class="row header-services-row">
+            <div class="large-4 medium-4 small-4 columns header-services-left">
+              <%= image_tag "images/Paperwork.png", :class => "service-icon " %>
+            </div>
+            <div class="large-8 medium-8 small-8 columns header-services-right">
+              <a href=""><p>Paperwork</p></a>
+            </div>
+          </div>
+          <div class="row header-services-row">
+            <div class="large-4 medium-4 small-4 columns header-services-left">
+              <%= image_tag "images/Planning.png", :class => "service-icon" %>
+            </div>
+            <div class="large-8 medium-8 small-8 columns header-services-right">
+              <a href=""><p>Planning</p></a>
+            </div>
+          </div>
+          <div class="row header-services-row">
+            <div class="large-4 medium-4 small-4 columns header-services-left">
+              <%= image_tag "images/Insurance.png", :class => "service-icon" %>
+            </div>
+            <div class="large-8 medium-8 small-8 columns header-services-right">
+              <a href=""><p>Insureance Management</p></a>
+            </div>
+          </div>
+          <div class="row header-services-row">
+            <div class="large-4 medium-4 small-4 columns header-services-left">
+              <%= image_tag "images/Concierge.png", :class => "service-icon" %>
+            </div>
+            <div class="large-8 medium-8 small-8 columns header-services-right">
+              <a href=""><p>Concierge</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="full reveal" id="exampleModal1" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+          <%= image_tag "images/Elite-Logo-white.png", :class => "modal-logo" %>
+          <div class="row modal-cont">
+            <div class="large-6 medium-6 columns modal-list">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <div class="large-6 medium-6 columns modal-text">
+              <h1>We're <br>here to <br> help! </h1>
+              <p> <b>Telephone:</b> (+1) 305 364 56 54 <br></p>
+              <p><b>Address:</b> 3105 NW <br> 107th Ave. Suite 606, <br> Doral, Florida 33172</p>
+            </div>
+          </div>
+          <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      <div class="header-logo-cont">
+        <a href="index.html"><%= image_tag "images/Elite-ICON.png", :class => "header-logo" %></a>
+      </div>
+<!--       <div class="header-text">
+        <p>Our goal is your confort</p>
+        <h1>Keep your assets safe and your mind at peace. Stop worrying and start enjoying a beautiful thing called life.</h1>
+      </div> -->
+      <div class="header-menu">
+        <div class="header-menu-text">
+          <h1>-Welcome!-</h1> 
+          <form>
+            <input type="text" id="name" name="name" placeholder="Username">
+            <input type="password" id="pass" name="pass" placeholder="Password">            
+            <a href="" title="Forgot Password?"><p>Forgot Password?</p></a>
+
+            <input type="submit" value="Login &services.html8594;">
+          </form>
+        </div>
+      </div>
+
+
+      <div class="mobile-menu">
+        <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+        <label for="drawer-toggle" id="drawer-toggle-label"></label>
+        <nav id="drawer">
+          <h1>We're here to Help!</h1>
+          <ul id="mobile-menu-1">
+            <li id="top-li-mobile-menu"><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="services.html">Blog</a></li>
+          </ul>
+          <p>Explore our Services</p>
+          <ul id="mobile-menu-2">
+            <li id="mm2a"><a href="property.html">Properties Maintenance</a></li>
+            <li id="mm2b"><a href="property.html">Administration of Properties</a></li>
+            <li id="mm2c"><a href="property.html">Payments</a></li>
+            <li id="mm2d"><a href="property.html">Paperwork</a></li>
+            <li id="mm2e"><a href="family.html">Insurance Management</a></li>
+            <li id="mm2f"><a href="family.html">Planning</a></li>
+            <li id="mm2g"><a href="family.html">Credit Card Management</a></li>
+            <li id="mm2h"><a href="concierge.html">Concierge Services</a></li>
+          </ul>
+          <div class="mobile-menu-phone">
+            <p> <b>Telephone:</b> (+1) 305 364 56 54 </p>
+            <p> <b>Address:</b> 3075 NW 107th Ave. <br> Doral, FL 22171-2134</p>
+          </div>
+        </nav>
+      </div>
+
+
+      <!-- <div class="scroll-down">
+        <a href="services.htmlPics" title="Go down"><%= image_tag "images/ScrollDown.png", :class => "sd-button" %></a>
+      </div> -->
+    <!-- </div> -->
+  </div>
+  
+</div>

@@ -1,0 +1,21 @@
+/* line 1, footer.css.scss */
+.footer-cont {
+  padding-top: 0 !important; }
+  @media screen and (max-width: 765px) {
+    /* line 1, footer.css.scss */
+    .footer-cont {
+      padding-top: 165% !important; } }
+
+/* line 9, footer.css.scss */
+.footer-col-1, .footer-col-3 {
+  visibility: visible;
+  bottom: 0px; }
+
+/* line 14, footer.css.scss */
+.footer-col {
+  padding-top: 20%; }
+
+@media screen and (max-width: 414px) {
+  /* line 18, footer.css.scss */
+  .footer-cont {
+    padding-top: 5% !important; } }

@@ -1,0 +1,240 @@
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* line 106, about_us.css.scss */
+#about_us {
+  padding-bottom: 5%; }
+
+/* line 498, about_us.css.scss */
+.header-p-image {
+  background: none !important;
+  height: 0px !important; }
+
+@media screen and (max-width: 1180px) {
+  /* line 537, about_us.css.scss */
+  .header .header-logo {
+    margin-top: 8vh !important;
+    width: 8%; } }
+
+/* line 544, about_us.css.scss */
+.about-top-img {
+  padding: 0; }
+  @media screen and (max-width: 414px) {
+    /* line 544, about_us.css.scss */
+    .about-top-img {
+      padding-top: 100px; } }
+
+/* line 551, about_us.css.scss */
+.about-header-top-img {
+  width: 100%;
+  padding: 0; }
+  @media screen and (max-width: 1636px) {
+    /* line 551, about_us.css.scss */
+    .about-header-top-img {
+      padding-top: 2%; } }
+  @media screen and (max-width: 1450px) {
+    /* line 551, about_us.css.scss */
+    .about-header-top-img {
+      padding-top: 3.5%; } }
+  @media screen and (max-width: 1280px) {
+    /* line 551, about_us.css.scss */
+    .about-header-top-img {
+      padding-top: 5%; } }
+  @media screen and (max-width: 1180px) {
+    /* line 551, about_us.css.scss */
+    .about-header-top-img {
+      padding-top: 5%; } }
+
+/* line 569, about_us.css.scss */
+#section2 {
+  padding-top: 5%; }
+  @media screen and (max-width: 414px) {
+    /* line 569, about_us.css.scss */
+    #section2 {
+      padding-right: 5%;
+      padding-left: 5%;
+      padding-top: 45px; } }
+  /* line 576, about_us.css.scss */
+  #section2 .highlight-text {
+    color: #0057CC;
+    font-weight: 600;
+    font-size: 52px; }
+    @media screen and (max-width: 414px) {
+      /* line 576, about_us.css.scss */
+      #section2 .highlight-text {
+        font-size: 29px;
+        padding-left: 3% !important; } }
+    @media screen and (max-width: 375px) {
+      /* line 576, about_us.css.scss */
+      #section2 .highlight-text {
+        padding-left: 3% !important; } }
+    @media screen and (max-width: 360px) {
+      /* line 576, about_us.css.scss */
+      #section2 .highlight-text {
+        font-size: 28px;
+        padding-left: 3% !important; } }
+    @media screen and (max-width: 320px) {
+      /* line 576, about_us.css.scss */
+      #section2 .highlight-text {
+        padding-left: 0% !important;
+        font-size: 25px; } }
+  @media screen and (max-width: 414px) {
+    /* line 597, about_us.css.scss */
+    #section2 p {
+      font-size: 19px; } }
+  /* line 603, about_us.css.scss */
+  #section2 #text-1 {
+    font-size: 1.4em;
+    color: #333333;
+    text-align: left;
+    width: 90%; }
+    /* line 608, about_us.css.scss */
+    #section2 #text-1 .text-1-paragraph {
+      font-weight: 300; }
+  /* line 613, about_us.css.scss */
+  #section2 #text-2 {
+    text-align: left;
+    width: 85%;
+    padding-top: 2%; }
+    /* line 617, about_us.css.scss */
+    #section2 #text-2 h1 {
+      padding-left: 5%; }
+    /* line 620, about_us.css.scss */
+    #section2 #text-2 .underline {
+      border: 5px solid #0057CC;
+      width: 15%; }
+      @media screen and (max-width: 765px) {
+        /* line 620, about_us.css.scss */
+        #section2 #text-2 .underline {
+          width: 20%; } }
+      @media screen and (max-width: 414px) {
+        /* line 620, about_us.css.scss */
+        #section2 #text-2 .underline {
+          border: 4px solid #0057CC;
+          width: 25%; } }
+
+/* line 635, about_us.css.scss */
+#section3 {
+  padding-top: 5%;
+  margin-bottom: 5%; }
+  @media screen and (max-width: 765px) {
+    /* line 635, about_us.css.scss */
+    #section3 {
+      padding-top: 10%;
+      padding-left: 7%;
+      padding-right: 7%; } }
+  @media screen and (max-width: 414px) {
+    /* line 635, about_us.css.scss */
+    #section3 {
+      padding-top: 15%;
+      padding-left: 0;
+      padding-right: 0; }
+      /* line 646, about_us.css.scss */
+      #section3 .columns {
+        padding-left: 0;
+        padding-right: 0; } }
+  /* line 653, about_us.css.scss */
+  #section3 h3 {
+    font-family: 'Playfair Display', serif; }
+  /* line 658, about_us.css.scss */
+  #section3 .team-element-container-left {
+    text-align: right;
+    position: relative;
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.7); }
+  /* line 664, about_us.css.scss */
+  #section3 .team-element-container-right {
+    text-align: left;
+    position: relative;
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.7); }
+  /* line 670, about_us.css.scss */
+  #section3 .team-individual-sub {
+    position: relative;
+    margin-top: 3%; }
+    @media screen and (max-width: 414px) {
+      /* line 670, about_us.css.scss */
+      #section3 .team-individual-sub {
+        margin-top: 0; } }
+  /* line 678, about_us.css.scss */
+  #section3 .team-individual-img {
+    box-shadow: 1px 4px 1px #aeaeae; }
+  /* line 682, about_us.css.scss */
+  #section3 .team-member-name-left {
+    position: absolute;
+    bottom: 7%;
+    right: 17%;
+    color: white;
+    text-align: left; }
+    @media screen and (max-width: 414px) {
+      /* line 682, about_us.css.scss */
+      #section3 .team-member-name-left {
+        bottom: 9%;
+        left: 11%;
+        font-size: 1.5em;
+        font-weight: 700; } }
+    @media screen and (max-width: 320px) {
+      /* line 682, about_us.css.scss */
+      #section3 .team-member-name-left {
+        font-size: 1.2em; } }
+  /* line 700, about_us.css.scss */
+  #section3 .team-member-name-right {
+    position: absolute;
+    bottom: 7%;
+    left: 6%;
+    color: white; }
+    @media screen and (max-width: 414px) {
+      /* line 700, about_us.css.scss */
+      #section3 .team-member-name-right {
+        bottom: 10%;
+        left: 11%;
+        font-size: 1.5em;
+        font-weight: 700; } }
+    @media screen and (max-width: 320px) {
+      /* line 700, about_us.css.scss */
+      #section3 .team-member-name-right {
+        font-size: 1.2em; } }
+  /* line 715, about_us.css.scss */
+  #section3 #team-col-2 {
+    margin-top: 8%; }
+    @media screen and (max-width: 414px) {
+      /* line 715, about_us.css.scss */
+      #section3 #team-col-2 {
+        margin-top: 0; } }
+  /* line 721, about_us.css.scss */
+  #section3 #team-col-3 {
+    background-image: url("..images/team-member-3.png"); }
+  /* line 724, about_us.css.scss */
+  #section3 #team-col-4 {
+    background-image: url("..images/team-member-4.png"); }
+  /* line 727, about_us.css.scss */
+  #section3 .team-member-name {
+    color: white; }
+
+/* line 732, about_us.css.scss */
+#team-frame-4 {
+  display: none; }

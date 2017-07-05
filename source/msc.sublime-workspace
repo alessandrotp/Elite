@@ -1,0 +1,361 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html.erb",
+			"settings":
+			{
+				"buffer_size": 19688,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "stylesheets/property.css.scss",
+			"settings":
+			{
+				"buffer_size": 8353,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "@charset \"utf-8\";\n@import \"normalize\";\n\n\n//-----------------colors--------------------------\n\n$navy: #0A1331;\n$bleu: #0057CC;\n\n//-----------------//colors------------------------\n\n//-----------------media queries-------------------\n// $bp-778: 778px; //Ipad\n// $bp-414: 414px; //iPhone6+\n// $bp-375: 375px; //iPhone6\n// $bp-360: 360px; //360x640 Nominal S6\n// $bp-320: 320px; //320x568 \n//-----------------//media queries-----------------\n\n// //-----------------------mixins--------------------\n@mixin slide-up-effect($ttime,$distance,$ftime,$delay) {\n  visibility: visible !important;\n  -webkit-transition: all $ttime ease-out;\n  -moz-transition: all $ttime ease-out;\n  -o-transition: all $ttime ease-out;\n  transition: all $ttime ease-out;\n  transition-delay: $delay;\n\n  -webkit-transform: translate3d(0px, $distance, 0px);\n  -moz-transform: translate3d(0px, $distance, 0px);\n  -ms-transform:translate3d(0px, $distance, 0px);\n  transform: translate3d(0px, $distance, 0px);\n\n  animation: fadein $ftime;\n  -moz-animation: fadein $ftime; /* Firefox */\n  -webkit-animation: fadein $ftime; /* Safari and Chrome */\n  -o-animation: fadein $ftime; /* Opera */\n  animation-delay: $delay;\n}\n\n@mixin slide-left-effect($ttime,$distance,$ftime,$delay) {\n  visibility: visible !important;\n  -webkit-transition: all $ttime ease-in;\n  -moz-transition: all $ttime ease-in;\n  -o-transition: all $ttime ease-in;\n  transition: all $ttime ease-in;\n  -webkit-transition-delay: $delay; /* Safari */\n  transition-delay: $delay;\n\n  -webkit-transform: translate3d($distance, 0px, 0px);\n  -moz-transform: translate3d($distance, 0px, 0px);\n  -ms-transform:translate3d($distance, 0px, 0px);\n  transform: translate3d($distance, 0px, 0px);\n\n  animation: fadein $ftime;\n  -moz-animation: fadein $ftime; /* Firefox */\n  -webkit-animation: fadein $ftime; /* Safari and Chrome */\n  -o-animation: fadein $ftime; /* Opera */\n  animation-delay: $delay;\n}\n\n@mixin fade-effect($ftime,$delay) {\n  opacity: 0;\n  visibility: visible;\n  -webkit-animation: fadein ease-in $ftime; /* Safari, Chrome and Opera > 12.1 */\n     -moz-animation: fadein ease-in $ftime; /* Firefox < 16 */\n      -ms-animation: fadein ease-in $ftime; /* Internet Explorer */\n       -o-animation: fadein ease-in $ftime; /* Opera < 12.1 */\n          animation: fadein ease-in $ftime;\n  \n  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/\n  -moz-animation-fill-mode:forwards;\n  animation-fill-mode:forwards;\n  \n  -webkit-animation-delay: $delay;\n  -moz-animation-delay: $delay;\n  animation-delay: $delay;\n\n}\n\n@keyframes fadein {\n    from { opacity: 0; }\n    to   { opacity: 1; }\n}\n\n/* Firefox < 16 */\n@-moz-keyframes fadein {\n    from { opacity: 0; }\n    to   { opacity: 1; }\n}\n\n/* Safari, Chrome and Opera > 12.1 */\n@-webkit-keyframes fadein {\n    from { opacity: 0; }\n    to   { opacity: 1; }\n}\n\n/* Internet Explorer */\n@-ms-keyframes fadein {\n    from { opacity: 0; }\n    to   { opacity: 1; }\n}\n\n/* Opera < 12.1 */\n@-o-keyframes fadein {\n    from { opacity: 0; }\n    to   { opacity: 1; }\n}\n//-----------------------//mixins------------------\n.main-div{\n  // max-width: 1366px;\n  margin-left: auto;\n  margin-right: auto;\n  overflow-x: hidden; \n}\n\nbody{\n  font-family: 'Open Sans', sans-serif;\n  font-size: 1em;\n  text-align: center;\n  // overflow-x: hidden;\n}\n\nh1{\n  font-family: 'Playfair Display', serif;\n}\n\n.fp-slidesNav{\n    display:none;\n}\n\n@import \"family.css.scss\";\n\n//-----------------header------------------------\n.header-cont{\n  // background: url(\"../images/Header.jpg\");\n  // background-position: center; \n  // background-repeat: no-repeat;\n  // background-size: cover;\n  height: 98vh;\n  position: relative;\n  width: 100%;\n  // background-attachment: fixed;\n    background-image: url('../images/Header.jpg');\n  background-size: cover;\n  background-attachment: fixed;\n  @media screen and (max-width: 765px){ \n    background-position-x: 52%;\n  }\n}\n\n.header-logo{\n  position: relative;\n  margin-top: 50px; \n  @media screen and (max-width: 765px){ \n    margin-top: 25px;\n    width: 30%;\n  }\n}\n\n.header-text{\n  visibility: hidden;\n  width: 50%;\n  position:absolute;\n  left: 70px;\n  text-align: left;\n  bottom: 15%;\n  color: white;\n  p{\n    margin-bottom: 0;\n    letter-spacing: 0.15em;\n    font-size: 1.1em;\n    @media screen and (max-width: 765px){ \n      font-size: 15px;\n      line-height: 36px;\n    }\n  }\n  h1{\n    margin-top: 0;\n    font-size: 41px;\n    letter-spacing: 0.01px;\n    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n    @media screen and (max-width: 765px){ \n      font-size: 26px;\n    }\n  }\n  @media screen and (max-width: 765px){ \n    width: 80%;\n    left: 0px;\n    bottom: 7.5%;\n  }\n}\n\n.c-hamburger {\n  visibility: hidden;\n  display: block;\n  position: absolute;\n  overflow: hidden;\n  top: 100px;\n  left: 65px;\n  margin: 0;\n  padding: 0;\n  width: 55px;\n  height: 40px;\n  font-size: 0;\n  text-indent: -9999px;\n  appearance: none;\n  box-shadow: none;\n  border-radius: none;\n  border: none;\n  cursor: pointer;\n  transition: background 0.3s;\n  z-index: 90;\n  background: transparent;\n  span{\n    width: 35px;\n  }\n  @media screen and (max-width: 765px){ \n    // top: 50px;\n    // left: -9px;\n    display: none;\n  }\n}\n\n.c-hamburger:focus {\n  outline: none;\n}\n\n.c-hamburger span {\n  display: block;\n  position: absolute;\n  top: 19px;\n  left: 9px;\n  right: 9px;\n  height: 4px;\n  background: white;\n  border-radius: 30px \n}\n\n.c-hamburger span::before,\n.c-hamburger span::after {\n  position: absolute;\n  display: block;\n  left: 0;\n  width: 35px;\n  height: 4px;\n  background-color: white;\n  content: \"\";  \n  border-radius: 30px \n}\n\n.c-hamburger span::before,\n.c-hamburger span::after {\n  position: absolute;\n  display: block;\n  left: 0;\n  width: 35px;\n  height: 4px;\n  background-color: white;\n  content: \"\";  \n  border-radius: 30px \n}\n\n.c-hamburger span::before {\n  top: -10px;\n}\n\n.c-hamburger span::after {\n  bottom: -10px;\n}\n\n.c-hamburger--htx span {\n  transition: background 0s 0.3s;\n}\n\n.c-hamburger--htx span::before,\n.c-hamburger--htx span::after {\n  transition-duration: 0.3s, 0.3s;\n  transition-delay: 0.3s, 0s;\n}\n\n.c-hamburger--htx span::before {\n  transition-property: top, transform;\n}\n\n.c-hamburger--htx span::after {\n  transition-property: bottom, transform;\n}\n\n/* active state, i.e. menu open */\n// .c-hamburger--htx.is-active {\n//   background-color: #cb0032;\n// }\n\n// .c-hamburger--htx.is-active span {\n//   background: none;\n// }\n\n// .c-hamburger--htx.is-active span::before {\n//   top: 0;\n//   transform: rotate(45deg);\n// }\n\n// .c-hamburger--htx.is-active span::after {\n//   bottom: 0;\n//   transform: rotate(-45deg);\n// }\n\n// .c-hamburger--htx.is-active span::before,\n// .c-hamburger--htx.is-active span::after {\n//   transition-delay: 0s, 0.3s;\n// }\n\n// .header-modal{\n//   width: 100%;\n//   height: 100%;\n//   background-color: black;\n//   position: absolute;\n// }\n\n.drawer-text{\n  visibility: hidden;\n  position: absolute;\n  left: 130px;\n  top: 104px;\n  z-index: 5;\n  a{\n    font-size: 21px;\n    color: white;\n    &:hover{\n      font-weight: 700;\n    }\n  }\n  p{\n    font-size: 21px;\n    color: white;\n  }\n  @media screen and (max-width: 765px){ \n    display: none;\n  }\n}\n\n#exampleModal1{\n  background: #2D2C2C;\n  ul{\n    list-style: none;\n    position: absolute;\n    top: 300px;\n    left: 25%;\n    font-size: 40px;\n    font-family: 'Playfair Display';\n    line-height: 70px;\n    text-align: left;\n  }\n  a{\n    transition: all 0.3s ease-in-out;\n    color: white;\n    &:hover{\n      color:#0083FF;\n      margin-left: 30px;\n    }\n  }\n}\n\n.close-button{\n  top: 80px;\n  right: 200px;\n  font-size: 3em;\n  color: white;\n  &:hover{\n    color: #8a8a8a;\n  }\n}\n\n.modal-logo{\n  left: 20%;\n  position: absolute;\n  top: 60px;\n  width: 18%;\n}\n\n.modal-text{\n  color: white;\n  text-align: left;\n  position: absolute;\n  right: 35%;\n  top: 290px;\n  h1{\n    font-size: 40px;\n    line-height: 45px;\n  }\n  p{\n    font-size: 15px;\n    line-height: 20px;\n  }\n}\n\n.header-menu{\n  position: absolute;\n  right: 9%;\n  width: 25%;\n  opacity: 0.9;\n  height: 100%;\n  transform: translateY(-50%);\n  top: 50%;\n  background-color: $navy;\n  opacity: 0.9;\n  visibility: hidden;\n}\n\n.header-menu-text{\n  position: relative;\n  top: 27%;\n  h1{\n    color: white;\n    font-size: 50px;\n  }\n  input[type=text], input[type=password] {\n    font-family: 'Open Sans', sans-serif;\n    padding: 10px 20px;\n    margin: 8px 0;\n    box-sizing: border-box;\n    background: transparent;\n    border: none;\n    border-bottom: 2px #8595AB solid;\n    width: 290px;\n    margin-left: 40px;\n    margin-top: 35px;\n    text-align: center;\n    color: white;\n    font-size: 18px;\n    padding-bottom: 12px;;\n    &:focus{\n      box-shadow: none;\n    }\n  }\n  input[type=submit] {\n    font-family: 'Open Sans', sans-serif;\n    color: white;\n    width: 165px;\n    font-size: 17px;\n    text-transform: uppercase;\n    letter-spacing: 2px;\n    padding: 7px;\n    background-color: #5066EC;\n    border: none;\n    border-radius: 30px;\n    box-shadow: 3px 2px 1px black;\n    margin-top: 30px;\n  }\n  a p{\n    margin-top: 30px;\n    color: white;\n    font-size: 14px;\n    outline: none;\n  }\n}\n\n::-webkit-input-placeholder {\n  color: white;\n  text-align: center;\n}\n\n:-moz-placeholder { /* Firefox 18- */\n  color: white;\n  text-align: center;\n}\n\n::-moz-placeholder {  /* Firefox 19+ */\n  color: white;\n  text-align: center;\n}\n\n:-ms-input-placeholder {  \n  color: white;\n  text-align: center;\n}\n\n.header-services{\n  position: absolute;\n  left: -70%;\n  width: 470px;\n  opacity: 0.9;\n  height: 0%; \n  height: 98vh; \n  top: -210%;\n  background-color: #0A1331;\n  transition: all 1s ease-in-out;\n  z-index: -1;\n  height: 0;\n  p{\n    text-align: left;\n    padding-top: 7px;\n    font-size: 17px;\n  }\n}\n\n.drawer-text:hover .header-services{\n  visibility: visible;\n  height: 98vh; \n  .header-services-row{\n    @include fade-effect(1.5s,0s)\n  }\n}\n\n.service-icon {\n  width: 45px; \n}\n\n.header-services-row{\n  padding-top: 30px;\n  visibility: hidden;\n}\n\n.header-services-right, .header-services-left{\n  margin: 0;\n  padding: 0;\n}\n\n.header-services-1{\n  padding-top: 200px;\n}\n\n.animation-left-header-services{\n  @include slide-left-effect(1s,50px,2.5s,0s);\n}\n\n.fade-element{\n  @include fade-effect(2.5s,0s)  \n}\n\n.animation-left-header-services{\n  @include slide-left-effect(1s,50px,2.5s,1s);\n  @media screen and (max-width: 765px){\n    @include slide-left-effect(0s,50px,0s,0s);\n  }\n}\n\n.animation-left-header-text{\n  @include slide-left-effect(1s,50px,2.5s,2s);\n}\n\n.sd-button{\n  position: absolute;\n  bottom: -30px;\n  left: 47.9%;\n  @media screen and (max-width: 765px){\n    left: 43.9%;\n  }\n}\n\n.menu-hide{\n  visibility: hidden;\n}\n//-----------------//header----------------------\n\n\n//---------------------Burger menu---------------\n.mobile-menu{\n  position: absolute;\n  top: 0px;\n  display: none;\n  @media screen and (max-width: 775px){\n    display: block;\n  }\n}\n\n.menu-logo-mobile-2{\n  padding: 10%;\n  padding-bottom: 15%;\n  @media screen and (max-width: 320px){\n    padding: 6%;\n    padding-bottom: 11%;\n    width: 80%;\n  }\n}\n\n#menu-mobile-item-1{\n  background-color: #f0fbfd;\n}\n\n#top-li-mobile-menu{\n  margin-top: 30px;\n  @media screen and (max-width: 320px){\n    margin-top: 20px;\n  }\n}\n\n#drawer-toggle {\n  position: absolute;\n  opacity: 0;\n}\n\n#drawer-toggle-label {\n  -webkit-touch-callout: none;\n  -webkit-user-select: none;\n  -khtml-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  left: 37px;\n  height: 100px;\n  width: 50px;\n  display: block;\n  position: fixed;\n  background: rgba(255, 255, 255, .0);\n  z-index: 1;\n  transition: all 0.5s ease-in-out;\n}\n/* adds our \"hamburger\" menu icon */\n\n#drawer-toggle-label:before {\n  content: '';\n  display: block;\n  position: absolute;\n  height: 4px;\n  width: 34px;\n  background: white;\n  left: 30%;\n  top: 58px;\n  box-shadow: 0px 10px 0 #ffffff, 0 20px 0 #ffffff;\n}\n\n#drawer {\n  position: fixed;\n  top: 0;\n  left: -85%;\n  height: 100%;\n  width: 85%;\n  background: #2f2f2f;\n  overflow-x: hidden;\n  overflow-y: scroll;\n  padding: 20px;\n  padding-left: 0px;\n  padding-right: 0px;\n  padding-top: 0px;\n  -webkit-overflow-scrolling: touch;\n  transition: all 0.5s ease-in-out;\n  background: $navy; /* For browsers that do not support gradients */\n  ul{\n    margin-top: 0px;\n    text-align: left;\n    margin-left: 0px;\n    @media screen and (max-width: 320px){\n      margin-top: 20px;\n    }\n  }\n  li {\n    height: 45px;\n    letter-spacing: 1px;\n    padding-left: 35px;\n    padding-top: 0.6em;\n    background-color: #222E50;\n    margin-top: 3px;\n    list-style: none;\n    // &:hover{\n    //   // background-color: #222E50;\n    // }\n    // @media screen and (max-width: 360px){\n    //   height: 40px;\n    //   letter-spacing: 0px;\n    // }\n    // @media screen and (max-width: 320px){\n    //   height: 30px;\n    //   font-size: 12px;\n    //   margin-top: 0px;\n    // }\n    a{\n      color: white;\n    }\n  }\n  h1{\n    color: white;\n  }\n  p{\n    color: white;\n    text-align: left;\n    padding-left: 30px;\n  }\n}\n\n#mobile-menu-1{\n  font-family: 'Playfair Display', serif;\n  font-size: 21px;\n  margin-bottom: 32px;\n  li{\n    line-height: 17px;\n    border-left: 5px $bleu solid;\n  }\n}\n\n#mobile-menu-2{\n  font-size: 14px;\n  line-height: 31px;\n  li{\n    list-style-position: inside;\n    background-position-x: 25px;\n    background-position-y: 10px;\n    padding-left: 70px;\n    line-height: 30px;\n    background-size: 25px auto; \n  }\n}\n\n#mm2a{\n  background:url('../images/PropertyMaintenance.png') no-repeat 0 0;\n}\n\n#mm2b{\n  background: url('../images/Administration.png') no-repeat 0 0;\n}\n\n#mm2c{\n  background: url('../images/Payments.png') no-repeat 0 0;\n}\n\n#mm2d{\n  background: url('../images/Paperwork.png') no-repeat 0 0;\n}\n\n#mm2e{\n  background: url('../images/Insurance.png') no-repeat 0 0;\n}\n\n#mm2f{\n  background: url('../images/Planning.png') no-repeat 0 0;\n}\n\n#mm2g{\n  background: url('../images/CreditCard.png') no-repeat 0 0;\n}\n\n#mm2h{\n  background: url('../images/Concierge.png') no-repeat 0 0;\n}\n\n\n\n/* actual page content pane */\n\n#page-content {\n  margin-left: 0px;\n  margin-top: 50px;\n  width: 100%;\n  height: calc(100% - 50px);\n  overflow-x: hidden;\n  overflow-y: scroll;\n  -webkit-overflow-scrolling: touch;\n  padding: 20px;\n}\n\n#drawer-toggle:checked ~ #drawer-toggle-label,\n#drawer-toggle:checked ~ header {\n  left: 85%;\n}\n\n#drawer-toggle:checked ~ #drawer {\n  left: 0px;\n}\n\n#drawer-toggle:checked ~ #page-content {\n  margin-left: 85%;\n}\n\n/* checked styles (menu open state) */\n\n#drawer-toggle:checked ~ #drawer-toggle-label {\n  height: 100%;\n  width: calc(100% - 84%);\n  // background: rgba(0, 0, 0, .8);\n}\n\n#drawer-toggle:checked ~ #drawer-toggle-label,\n#drawer-toggle:checked ~ header {\n  left: 84%;\n}\n\n#drawer-toggle:checked ~ #drawer {\n  left: 0px;\n}\n\n#drawer-toggle:checked ~ #page-content {\n  margin-left: 350px;\n}\n\n[type=\"checkbox\"] + label{\n  margin-left: 0px !important;\n}\n\n.mobile-menu-phone{\n  padding-top: 30px;\n  p{\n    text-align: center !important;\n    padding-left: 0 !important;\n    font-size: 13px;\n    line-height: 14px;\n  }\n}\n//---------------------//Burger menu------------- \n\n\n\n//-----------------Pics-----------------------\n\n.header2{\n  margin-top: 120px;\n}\n\n.header2-col-1, .header2-col-2, .header2-col-3{\n  margin-top: 100px;\n  background-color: $bleu;\n  visibility: hidden;\n  @media screen and (max-width: 765px){\n    visibility: visible;\n    margin-top: 0px;\n    width: 95%;\n    margin-left: auto;\n    margin-right: auto;\n  }\n}\n\n.header2-col-2, .header2-col-3{\n  @media screen and (max-width: 765px){\n    margin-top: 40px;\n  }\n}\n\n.header-2-col-cont-i{\n  position: relative;\n  padding-bottom: 5px;\n  text-shadow: 2px 2px black;\n}\n\n.header2-col-img{\n  width: 100%;  \n  transition: all 0.5s ease-in-out;\n}\n\n.header-2-col-cont-i:hover .header2-col-img{ \n  opacity: 0.3; \n}\n\n.header2-img-text{\n  color: white;\n  position: absolute;\n  bottom: 45px;\n  text-align: left;\n  font-size: 22px;\n  line-height: 90%;\n  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n  left: 60px;\n}\n\n.header2-ribbon{\n  height: 5px;\n  transition: all 0.5s ease-out;\n}\n\n.animation-up-pic-img-1{\n  @include slide-up-effect(1s,-100px,2.5s,0s);\n}\n\n.animation-up-pic-img-2{\n  @include slide-up-effect(1s,-100px,2.5s,1s);\n}\n\n.animation-up-pic-img-3{\n  @include slide-up-effect(1s,-100px,2.5s,2s);\n}\n\n\n//-----------------//Pics---------------------\n\n//-----------------what-we-do--------------------\n\n.what-we-do{\n  padding-top: 1%;\n  padding-bottom: 7.5%;\n  position: relative;\n  @media screen and (max-width: 765px){\n    padding-top: 8%;\n  }\n}\n\n.what-col-1{\n  background-color: $navy;\n  color: white;\n  position: absolute;\n  left: -100px;\n  visibility: hidden;\n  h1{\n    margin-top: 70px;\n    text-align: left;\n    margin-left: 12.5%;\n    font-size: 52px;\n    line-height: 90%;\n    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n  }\n  h1 + p { \n    margin-top: 184px;\n    font-size: 1.4em;\n    width: 70%;\n    margin-left: 12.5%;\n    text-align: left;\n    margin-bottom: 63px;\n    @media screen and (max-width: 765px){\n      margin-bottom: 163px;\n      margin-top: 90px;\n    }\n  }\n  @media screen and (max-width: 765px){\n    position: relative;\n    visibility: visible;\n    left:0px;\n  }\n}\n\n.what-col-2{\n  width: 43%; \n  padding-right: 8%;\n  @media screen and (max-width: 765px){\n    width: 100%;\n    padding-right: 10px;\n  }\n}\n\n.ss{\n  padding-top:5%; \n  p{\n   text-align: left;\n   font-size: 1.5em;\n   color: gray;\n    font-family: 'Playfair Display', serif;\n  }\n  h1{\n    font-family: 'Lato', sans-serif;\n    font-size: 29px;\n    width: 90%;\n    font-weight: 700;\n    font-style: italic;\n    text-align: left;\n    @media screen and (max-width: 765px){\n      font-size: 26px;\n    }\n  }\n  @media screen and (max-width: 765px){\n    margin-left: 8%;\n  }\n}\n\n.what-signature{\n  padding-top: 20px;\n  //   span{\n  float: left;\n  width: 210px;\n  p{\n    padding-left: 17%;\n    font-size: 0.9em;\n  }\n  span{\n    float: left;\n    padding-left: 15%;\n    font-weight: 700;\n    font-size: 1.2em;\n  }\n}\n\n.what-arrow-box{\n  position:absolute;\n  height: 140px;\n  width: 140px;\n  top: 35%;\n  right: -4%;\n  background-color: $bleu;\n  transition: all .15s linear;\n  p{\n    position: relative;\n    top: 50px;\n    font-size: 24px;\n    color: white;\n    @media screen and (max-width: 765px){\n      top: 30px;\n    }\n  }\n  &:hover{\n    transform: translateX(25px);\n    @media screen and (max-width: 765px){\n      transform: translateX(0px);\n    }\n  }\n  @media screen and (max-width: 765px){\n    position: absolute;\n    right: 0%;\n    height: 100px;\n    width: 90px;\n    bottom: 0px;\n    top: auto;\n  }\n}\n\n.inner-slide{\n  visibility: hidden;\n  @media screen and (max-width: 765px){\n    visibility: visible;\n  }\n}\n\n.animation-left-what-col-1{\n  @include slide-left-effect(2s,100px,3.5s,0s);\n}\n\n.fade-element-what{\n  @include fade-effect(2.5s,2s)  \n}\n//-----------------//what-we-do------------------\n\n//-----------------Pillars-----------------------\n.pillars-cont{\n  padding-top: 7%;\n  padding-bottom: 6%;\n  @media screen and (max-width: 765px){\n    padding-top: 0%;\n  }\n}\n\n.pillars-text{\n  visibility: hidden;\n  // width: 110%;\n  z-index: 1;\n  position: relative;\n  left: calc(22%-100px);\n  text-align: left;\n  margin-top: -23%;\n  padding-left: 98px;\n  h1{\n    font-size: 50px;\n    line-height: 125%;\n    color: $bleu;\n    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);\n    @media screen and (max-width: 765px){\n      text-align: center;\n      font-size: 34px;\n      width: 84%;\n      margin-left: auto;\n      margin-right: auto;\n    }\n  }\n  @media screen and (max-width: 765px){\n    padding-left: 0%;\n    margin-top: 0%;\n  }\n}\n\n.pillars-col-1-text{\n  margin-top: 50px;\n  h2{\n    font-size: 19px;\n    text-align: left;\n    color: $bleu;\n    font-weight: 700;\n    letter-spacing: 1px;\n  }\n  p{\n    text-align: left;\n    font-size: 22px;\n    width: 80%;\n    line-height: 29px;\n    @media screen and (max-width: 765px){\n      font-size: 20px;\n      line-height: 34px; \n    }\n  }\n  h2 + p { \n    padding-bottom: 30px;\n    @media screen and (max-width: 765px){\n      padding-top: 10px;\n    }\n  }\n  @media screen and (max-width: 765px){\n    margin-top: 0px;\n  }\n}\n\n.pillars-col-1 {\n  @media screen and (max-width: 765px){\n    padding-bottom: 40px;\n  }\n}\n\n.pillars-col-2{\n  @media screen and (max-width: 765px){\n    display: none;\n  }\n}\n\n.ribbon-small{\n  height: 8px;\n  background-color: #DFDFDF;\n  width: 80px;\n  margin-left: -100px;\n  margin-bottom: 17px;\n  @media screen and (max-width: 765px){\n    margin-left: -14px;\n    margin-bottom: 30px;\n  }\n}\n\n.pillars-img{\n  visibility: hidden;\n  position: relative;\n  z-index: -1;\n}\n\n.animation-left-pillar-text{\n  @include slide-left-effect(2s,100px,3.5s,0s);\n  @media screen and (max-width: 765px){\n    @include slide-left-effect(2s,0px,3.5s,0s);\n  }\n}\n\n.fade-element-pillars-img{\n  @include fade-effect(2s,2s);\n}\n\n.pillars-text-1, .pillars-text-2, .pillars-text-3{\n  position: relative;\n  left: -100px;\n  visibility: hidden;\n  @media screen and (max-width: 765px){\n    padding-left: 40px;\n  }\n} \n\n.animation-left-pillar-text-1{\n  @include slide-left-effect(2s,100px,3.5s,3s); \n  @media screen and (max-width: 765px){\n    @include slide-left-effect(2s,100px,3.5s,0s); \n  }\n}\n\n.animation-left-pillar-text-2{\n  @include slide-left-effect(2s,100px,3.5s,4s); \n  @media screen and (max-width: 765px){\n    @include slide-left-effect(2s,100px,3.5s,0.5s); \n  }\n}\n\n.animation-left-pillar-text-3{\n  @include slide-left-effect(2s,100px,3.5s,5s); \n  @media screen and (max-width: 765px){\n    @include slide-left-effect(2s,100px,3.5s,1s); \n  }\n}\n//-----------------//Pillars---------------------\n\n\n\n//--------------------Help-----------------------\n\n.help-cont{\n  background-color: $navy;\n  margin-top: 5%;\n  padding-bottom: 7%;\n  padding-top: 1.6%;  \n  h1{\n    color: white;\n    font-size: 49px;\n    letter-spacing: 0.02px;\n    @media screen and (max-width: 765px){\n      font-size: 32px;\n    }\n  }\n}\n\n.help-col-cont {\n  @media screen and (max-width: 765px){\n    width: 80%;\n  }\n}\n\n.help-col{\n  color: white;\n}\n\n.help-link{\n  border: 3px white solid;\n  transition: all .15s linear;\n  p{\n    margin: 0.5em auto;\n    font-size: 19px;\n    font-weight: 700;\n  }\n  &:hover{\n    color: $navy;\n    background-color: white;\n    cursor: pointer; \n  }\n}\n\n.help-link-1,.help-link-2,.help-link-3{\n  position: relative;\n  @media screen and (max-width: 765px){\n    margin-top: 15px;\n    margin-bottom: 16px;\n  }\n}\n\n\n.help-col-2{\n  float: left !important;\n}\n\n//--------------------//Help---------------------\n\n//--------------------Blog-----------------------\n\n.blog-cont{\n  margin-top: 5%;\n}\n\n.blog-links {\n  @media screen and (max-width: 765px){\n    margin-top: 90px;\n  }\n}\n\n.blog-link-text {\n  @media screen and (max-width: 765px){\n    width: 70%;\n    margin-left: 15%;\n    font-size: 19px;\n  }\n}\n\n.block-link-text{\n  font-size: 15px;\n  @media screen and (max-width: 765px){\n    width: 40%;\n    font-size: 17px;\n  }\n  p{\n    color: black;\n    &:hover{\n      font-weight: 700;\n    }\n  }\n}\n\n.blog-post-col-cont{\n  padding-top: 50px;\n  font-family: 'Lato', sans-serif;\n  font-size: 16px;\n  line-height: 130%;\n  letter-spacing: 0.15px;\n  color: $bleu;\n}\n\n.blog-post-col-i{\n  @media screen and (max-width: 765px){\n    display: none;\n  }\n}\n  \n.inner-slide-m{\n  display: none;\n  @media screen and (max-width: 765px){\n    display: block;\n  }\n}\n\n.blog-link-col-1{\n  text-align: left;\n  @media screen and (max-width: 765px){\n    margin-left: 30px;\n    width: 40%;\n  }\n}\n\n.blog-link-col-2{\n  text-align: right;\n  @media screen and (max-width: 765px){\n    margin-right: 30px;\n  }\n}\n\n.blog-link-col-1,.blog-link-col-2, .blog-link-col-3{\n  position: relative;\n}\n\n.blog-overlay{\n  position: absolute;\n  height: 82.5%;\n  width: 75%;\n  background-color: transparent;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%,-50%);\n  transition: all 0.5s ease-in-out;\n  opacity: 0.9;\n}\n\n.blog-post-col-i:hover{\n  .blog-overlay{ \n    display: block;\n    background-color: #0A1331;\n  }\n  .cross{\n    border: 4px white solid;\n    &::before{\n      background-color: white;\n    }\n    &::after{\n      background-color: white;\n    }\n  }\n}\n\n.inner-slide-m:hover{\n  .blog-overlay{ \n    display: block;\n    background-color: #0A1331;\n  }\n  .cross{\n    border: 4px white solid;\n    &::before{\n      background-color: white;\n    }\n    &::after{\n      background-color: white;\n    }\n  }\n}\n\n.cross{\n  // position: relative;\n  top: 40%;\n  left: 50%;\n  transform: translate(-50%,-50%);\n  width: 90px;\n  height: 90px;\n  margin: 50px auto;\n  transition: all 0.5s ease-in-out;\n  border-radius: 50% 50%;\n  position: absolute;\n  transform: translate(-50%,-50%);\n  &::before{\n      background: transparent;\n      position: absolute;\n      display:block;\n      content:'';\n      width: 70%;\n      height: 6%;\n      top: 47%;\n      left: 15%;\n      transition: all 0.5s ease-in-out;\n      border-radius: 30px;\n  } \n  &::after{\n      background: transparent;\n      position: absolute;\n      display:block;\n      content:'';\n      width: 6%;\n      height: 70%;\n      left: 47%;\n      top: 15%;\n      transition: all 0.5s ease-in-out;\n      border-radius: 30px;\n  } \n}\n\n.blog-link-1, .blog-link-2, .blog-link-3{\n  bottom: -100px;\n  position: relative;\n  visibility: hidden;\n  @media screen and (max-width: 765px){\n    visibility: visible;\n    bottom: 0px;\n  }\n}\n\n.animation-up-blog-img-1{\n  @include slide-up-effect(1s,-100px,2.5s,1s);\n}\n\n.animation-up-blog-img-2{\n  @include slide-up-effect(1s,-100px,2.5s,0s);\n}\n\n.animation-up-blog-img-3{\n  @include slide-up-effect(1s,-100px,2.5s,1s);\n}\n//--------------------//Blog---------------------\n\n//----------------------CTA----------------------\n\n.cta{\n  padding-top: 50px;\n  @media screen and (max-width: 765px){\n    padding-top: 30px;\n  }\n}\n\n.cta-img-1{\n  opacity: 0;\n}\n\n.cta-ribbon{\n  height: 5px;\n  background-color: #63C8F1;\n  margin-top: 100px;\n  @media screen and (max-width: 765px){\n    margin-top: 50px;\n  }\n}\n\n.su-button{\n  position: absolute;\n  bottom: -19px;\n  left: 48.9%;\n  @media screen and (max-width: 765px){\n    left: 45%;\n  }\n}\n//--------------------//CTA----------------------\n\n//-------------------Footer----------------------\n\n.footer-cont{\n  padding-top: 60px;\n}\n\n.footer-col-1,.footer-col-3{\n  padding-top: 40px;\n}\n\n.footer-col-2 {\n  @media screen and (max-width: 765px){\n    position: relative;\n    top: -10px;\n  }\n}\n\n.footer-col-1 {\n  @media screen and (max-width: 765px){\n    display: none;\n  }\n}\n\n.footer-col-1 {\n  @media screen and (max-width: 765px){\n    visibility:visible;\n  }\n}\n\n.footer-col-1-m {\n  display: none;\n  @media screen and (max-width: 765px){\n    display: block;\n    padding-top: 20px;\n  }\n}\n\n.footer-logo{\n  @media screen and (max-width: 765px){\n    width: 30%;\n  }\n}\n\n.footer-links > div{\n  font-size: 12px;\n  padding: 0;\n  margin: 0;\n  &:hover{\n    font-weight: 700;\n  }\n  a{\n    color: black;\n  }\n}\n\n.box-wrapper{\n  padding-top: 5%;\n}\n\n.ssnn-img{\n  padding: 0px 20px;\n}\n\n.copyright { //copyright container\n  padding-top: 3%;\n  padding-bottom: 1%;\n  // background-color: $Beige;\n  text-align: center;\n  vertical-align: middle;\n  // @media screen and (max-width: $bp-480){\n  //   display: none;\n  // }\n  @media screen and (max-width: 765px){\n    padding-top: 5%;\n  }\n}\n\n.copyright span { //copyright text\n  font-size: 15px;\n  // color: $NotBlack2;\n  width: 30%;\n  margin-left: 15%;\n  @media screen and (max-width: 765px){\n    margin-left: 0px;\n  }\n}\n\n.copyright img{ //the social us img\n  width: 3%;\n  margin-right: 15%;\n  vertical-align: middle;\n  margin-left: 4px;\n  @media screen and (max-width: 765px){\n    margin-right: 0px;\n    width: 9%;  \n  }\n}\n\n.footer-col-1,.footer-col-3{\n  position: relative;\n  bottom: -100px;\n  visibility: hidden;\n}\n\n.footer-col-3{\n  @media screen and (max-width: 765px){\n    display: none;\n  }\n}\n\n.footer-col-3-m{\n  display: none;\n  @media screen and (max-width: 765px){\n    display: block;\n    width: 95%;\n  }\n}\n\n.social {\n  @media screen and (max-width: 765px){\n    padding-top: 310px;\n    padding-bottom: 45px;  \n  }\n}\n\n.box-wrapper {\n  padding-top: 200px; \n  @media screen and (max-width: 765px){\n    padding-top: 0px; \n  }\n}\n\n.animation-up-footer-col-1{\n  @include slide-up-effect(2s,-100px,2.5s,0s);\n}\n\n.animation-up-footer-col-3{\n  @include slide-up-effect(2s,-100px,2.5s,0s);\n}\n//-----------------//Footer----------------------\n\n\n",
+			"file": "stylesheets/site.css.scss",
+			"file_size": 28343,
+			"file_write_time": 131262331843742428,
+			"settings":
+			{
+				"buffer_size": 28345,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 252.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"acka",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 342.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/peggysue/Elite/source/stylesheets"
+	],
+	"file_history":
+	[
+		"/home/peggysue/.config/sublime-text-3/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/home/peggysue/.config/sublime-text-3/Packages/SublimeCodeIntel/Default (Linux).sublime-keymap",
+		"/home/peggysue/.config/sublime-text-3/Packages/SublimeCodeIntel/Default (Linux).sublime-mousemap",
+		"/home/peggysue/.config/sublime-text-3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/home/peggysue/.config/sublime-text-3/Packages/CSS Extended Completions/css_style_completions.sublime-settings",
+		"/home/peggysue/Elite/source/msc.sublime-project",
+		"/home/peggysue/Elite/source/stylesheets/msc.sublime-project"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19688,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19688,
+								19688
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/ERB Autocomplete/erb.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 6944.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "stylesheets/property.css.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8353,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8352,
+								8352
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4648.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "stylesheets/site.css.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 28345,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								28345,
+								28345
+							]
+						],
+						"settings":
+						{
+							"auto_complete_triggers":
+							[
+								{
+									"characters": "<",
+									"selector": "text.html"
+								},
+								{
+									"characters": ".#",
+									"selector": "text.html"
+								}
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 21552.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.960285941223,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CSS Extended Completions":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "msc.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 276.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

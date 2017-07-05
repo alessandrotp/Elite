@@ -1,0 +1,734 @@
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+/* line 108, header_menu.css.scss */
+.header {
+  width: 100%;
+  height: 15vh;
+  position: absolute;
+  top: 0;
+  max-width: initial;
+  background-color: white; }
+  @media screen and (max-width: 765px) {
+    /* line 108, header_menu.css.scss */
+    .header {
+      height: 130px; } }
+  /* line 124, header_menu.css.scss */
+  .header .header-logo {
+    position: relative;
+    margin-top: 6vh;
+    z-index: 20; }
+    @media screen and (max-width: 765px) {
+      /* line 124, header_menu.css.scss */
+      .header .header-logo {
+        margin-top: 20px;
+        width: 11%;
+        z-index: 0; } }
+    @media screen and (max-width: 414px) {
+      /* line 124, header_menu.css.scss */
+      .header .header-logo {
+        width: 22%;
+        margin-top: 15px; } }
+    @media screen and (max-width: 360px) {
+      /* line 124, header_menu.css.scss */
+      .header .header-logo {
+        width: 26%; } }
+  /* line 145, header_menu.css.scss */
+  .header .c-hamburger {
+    visibility: visible;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    top: 5vh;
+    left: 120px;
+    margin: 0;
+    padding: 0;
+    width: 55px;
+    height: 40px;
+    font-size: 0;
+    text-indent: -9999px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    z-index: 90;
+    background: transparent; }
+    /* line 166, header_menu.css.scss */
+    .header .c-hamburger span {
+      width: 35px; }
+    @media screen and (max-width: 765px) {
+      /* line 145, header_menu.css.scss */
+      .header .c-hamburger {
+        display: none; } }
+  /* line 177, header_menu.css.scss */
+  .header .c-hamburger:focus {
+    outline: none; }
+  /* line 181, header_menu.css.scss */
+  .header .c-hamburger span {
+    display: block;
+    position: absolute;
+    top: 19px;
+    left: 9px;
+    right: 9px;
+    height: 4px;
+    background: #333333;
+    border-radius: 30px;
+    box-shadow: none; }
+  /* line 193, header_menu.css.scss */
+  .header .c-hamburger span::before,
+  .header .c-hamburger span::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 35px;
+    height: 4px;
+    background-color: #333333;
+    content: "";
+    border-radius: 30px; }
+  /* line 205, header_menu.css.scss */
+  .header .c-hamburger span::before,
+  .header .c-hamburger span::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 35px;
+    height: 4px;
+    background-color: #333333;
+    content: "";
+    border-radius: 30px;
+    box-shadow: none; }
+  /* line 218, header_menu.css.scss */
+  .header .c-hamburger span::before {
+    top: -10px; }
+  /* line 222, header_menu.css.scss */
+  .header .c-hamburger span::after {
+    bottom: -10px; }
+  /* line 226, header_menu.css.scss */
+  .header .c-hamburger--htx span {
+    transition: background 0s 0.3s; }
+  /* line 230, header_menu.css.scss */
+  .header .c-hamburger--htx span::before,
+  .header .c-hamburger--htx span::after {
+    transition-duration: 0.3s, 0.3s;
+    transition-delay: 0.3s, 0s; }
+  /* line 236, header_menu.css.scss */
+  .header .c-hamburger--htx span::before {
+    transition-property: top, transform; }
+  /* line 240, header_menu.css.scss */
+  .header .c-hamburger--htx span::after {
+    transition-property: bottom, transform; }
+  /* line 244, header_menu.css.scss */
+  .header .drawer-text {
+    visibility: visible;
+    position: absolute;
+    left: 180px;
+    top: 5.5vh;
+    z-index: 5; }
+    /* line 250, header_menu.css.scss */
+    .header .drawer-text a {
+      font-size: 21px;
+      color: white; }
+      /* line 253, header_menu.css.scss */
+      .header .drawer-text a:hover {
+        font-weight: 700;
+        color: white; }
+    /* line 258, header_menu.css.scss */
+    .header .drawer-text p {
+      font-size: 21px;
+      color: white; }
+    @media screen and (max-width: 765px) {
+      /* line 244, header_menu.css.scss */
+      .header .drawer-text {
+        display: none; } }
+  /* line 267, header_menu.css.scss */
+  .header .service-title {
+    color: #333333 !important;
+    transition: all 0.3s ease-in-out; }
+    /* line 270, header_menu.css.scss */
+    .header .service-title:hover {
+      color: white; }
+  /* line 275, header_menu.css.scss */
+  .header #exampleModal1 {
+    background: #2D2C2C; }
+    /* line 277, header_menu.css.scss */
+    .header #exampleModal1 ul {
+      list-style: none;
+      position: absolute;
+      top: 300px;
+      left: 225px;
+      font-size: 40px;
+      font-family: 'Playfair Display';
+      line-height: 70px;
+      text-align: left; }
+    /* line 287, header_menu.css.scss */
+    .header #exampleModal1 a {
+      transition: all 0.3s ease-in-out;
+      color: white; }
+      /* line 290, header_menu.css.scss */
+      .header #exampleModal1 a:hover {
+        color: #0083FF;
+        margin-left: 30px; }
+  /* line 297, header_menu.css.scss */
+  .header .close-button {
+    top: 80px;
+    right: 200px;
+    font-size: 3em;
+    color: white; }
+    /* line 302, header_menu.css.scss */
+    .header .close-button:hover {
+      color: white; }
+  /* line 307, header_menu.css.scss */
+  .header .modal-logo {
+    left: 130px;
+    position: absolute;
+    top: 60px; }
+  /* line 313, header_menu.css.scss */
+  .header .modal-text {
+    color: white;
+    text-align: left;
+    position: absolute;
+    right: 30%;
+    top: 290px; }
+    /* line 319, header_menu.css.scss */
+    .header .modal-text h1 {
+      font-size: 40px;
+      line-height: 45px; }
+    /* line 323, header_menu.css.scss */
+    .header .modal-text p {
+      font-size: 15px;
+      line-height: 20px; }
+  /* line 329, header_menu.css.scss */
+  .header .header-menu-text {
+    position: relative;
+    top: 27%; }
+    /* line 332, header_menu.css.scss */
+    .header .header-menu-text h1 {
+      color: white;
+      font-size: 50px; }
+    /* line 336, header_menu.css.scss */
+    .header .header-menu-text input[type=text], .header .header-menu-text input[type=password] {
+      font-family: 'Open Sans', sans-serif;
+      padding: 10px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      background: transparent;
+      border: none;
+      border-bottom: 2px #8595AB solid;
+      width: 290px;
+      margin-left: 40px;
+      margin-top: 35px;
+      text-align: center;
+      color: white;
+      font-size: 18px;
+      padding-bottom: 12px; }
+      /* line 351, header_menu.css.scss */
+      .header .header-menu-text input[type=text]:focus, .header .header-menu-text input[type=password]:focus {
+        box-shadow: none; }
+    /* line 355, header_menu.css.scss */
+    .header .header-menu-text input[type=submit] {
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      width: 165px;
+      font-size: 17px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 7px;
+      background-color: #5066EC;
+      border: none;
+      border-radius: 30px;
+      box-shadow: 3px 2px 1px black;
+      margin-top: 30px; }
+    /* line 369, header_menu.css.scss */
+    .header .header-menu-text a p {
+      margin-top: 30px;
+      color: white;
+      font-size: 14px;
+      outline: none; }
+  /* line 377, header_menu.css.scss */
+  .header ::-webkit-input-placeholder {
+    color: white;
+    text-align: center; }
+  /* line 382, header_menu.css.scss */
+  .header :-moz-placeholder {
+    /* Firefox 18- */
+    color: white;
+    text-align: center; }
+  /* line 387, header_menu.css.scss */
+  .header ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: white;
+    text-align: center; }
+  /* line 392, header_menu.css.scss */
+  .header :-ms-input-placeholder {
+    color: white;
+    text-align: center; }
+  /* line 397, header_menu.css.scss */
+  .header .header-services {
+    position: absolute;
+    left: -70%;
+    width: 470px;
+    opacity: 0.9;
+    height: 0%;
+    height: 100vh;
+    top: -110%;
+    background-color: #0A1331;
+    transition: all 1s ease-in-out;
+    z-index: -1;
+    height: 0; }
+    /* line 409, header_menu.css.scss */
+    .header .header-services p {
+      text-align: left;
+      padding-top: 7px;
+      font-size: 17px; }
+  /* line 416, header_menu.css.scss */
+  .header .drawer-text:hover .service-title {
+    color: white !important; }
+  /* line 420, header_menu.css.scss */
+  .header .drawer-text:hover .header-services {
+    visibility: visible;
+    height: 110vh; }
+    /* line 423, header_menu.css.scss */
+    .header .drawer-text:hover .header-services .header-services-row {
+      opacity: 0;
+      visibility: visible;
+      -webkit-animation: fadein ease-in 1.5s;
+      /* Safari, Chrome and Opera > 12.1 */
+      -moz-animation: fadein ease-in 1.5s;
+      /* Firefox < 16 */
+      -ms-animation: fadein ease-in 1.5s;
+      /* Internet Explorer */
+      -o-animation: fadein ease-in 1.5s;
+      /* Opera < 12.1 */
+      animation: fadein ease-in 1.5s;
+      -webkit-animation-fill-mode: forwards;
+      /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+      -moz-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-animation-delay: 0s;
+      -moz-animation-delay: 0s;
+      animation-delay: 0s; }
+  /* line 428, header_menu.css.scss */
+  .header .service-icon {
+    width: 45px;
+    margin-left: 1px; }
+  /* line 433, header_menu.css.scss */
+  .header .header-services-row {
+    padding-top: 30px;
+    visibility: hidden; }
+  /* line 438, header_menu.css.scss */
+  .header .header-services-left {
+    width: 45px;
+    margin-left: 80px; }
+  /* line 443, header_menu.css.scss */
+  .header .header-services-right {
+    float: none !important;
+    margin-left: 155px; }
+  /* line 448, header_menu.css.scss */
+  .header .header-services-1 {
+    padding-top: 150px; }
+  /* line 452, header_menu.css.scss */
+  .header .animation-left-header-services {
+    visibility: visible !important;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+    -webkit-transition-delay: 0s;
+    /* Safari */
+    transition-delay: 0s;
+    -webkit-transform: translate3d(50px, 0px, 0px);
+    -moz-transform: translate3d(50px, 0px, 0px);
+    -ms-transform: translate3d(50px, 0px, 0px);
+    transform: translate3d(50px, 0px, 0px);
+    animation: fadein 2.5s;
+    -moz-animation: fadein 2.5s;
+    /* Firefox */
+    -webkit-animation: fadein 2.5s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2.5s;
+    /* Opera */
+    animation-delay: 0s; }
+  /* line 456, header_menu.css.scss */
+  .header .fade-element {
+    opacity: 0;
+    visibility: visible;
+    -webkit-animation: fadein ease-in 2.5s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein ease-in 2.5s;
+    /* Firefox < 16 */
+    -ms-animation: fadein ease-in 2.5s;
+    /* Internet Explorer */
+    -o-animation: fadein ease-in 2.5s;
+    /* Opera < 12.1 */
+    animation: fadein ease-in 2.5s;
+    -webkit-animation-fill-mode: forwards;
+    /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    animation-delay: 0s; }
+  /* line 460, header_menu.css.scss */
+  .header .animation-left-header-services {
+    visibility: visible !important;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+    -webkit-transition-delay: 1s;
+    /* Safari */
+    transition-delay: 1s;
+    -webkit-transform: translate3d(50px, 0px, 0px);
+    -moz-transform: translate3d(50px, 0px, 0px);
+    -ms-transform: translate3d(50px, 0px, 0px);
+    transform: translate3d(50px, 0px, 0px);
+    animation: fadein 2.5s;
+    -moz-animation: fadein 2.5s;
+    /* Firefox */
+    -webkit-animation: fadein 2.5s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2.5s;
+    /* Opera */
+    animation-delay: 1s; }
+    @media screen and (max-width: 765px) {
+      /* line 460, header_menu.css.scss */
+      .header .animation-left-header-services {
+        visibility: visible !important;
+        -webkit-transition: all 0s ease-in;
+        -moz-transition: all 0s ease-in;
+        -o-transition: all 0s ease-in;
+        transition: all 0s ease-in;
+        -webkit-transition-delay: 0s;
+        /* Safari */
+        transition-delay: 0s;
+        -webkit-transform: translate3d(50px, 0px, 0px);
+        -moz-transform: translate3d(50px, 0px, 0px);
+        -ms-transform: translate3d(50px, 0px, 0px);
+        transform: translate3d(50px, 0px, 0px);
+        animation: fadein 0s;
+        -moz-animation: fadein 0s;
+        /* Firefox */
+        -webkit-animation: fadein 0s;
+        /* Safari and Chrome */
+        -o-animation: fadein 0s;
+        /* Opera */
+        animation-delay: 0s; } }
+  /* line 467, header_menu.css.scss */
+  .header .animation-left-header-text {
+    visibility: visible !important;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
+    -webkit-transition-delay: 2s;
+    /* Safari */
+    transition-delay: 2s;
+    -webkit-transform: translate3d(50px, 0px, 0px);
+    -moz-transform: translate3d(50px, 0px, 0px);
+    -ms-transform: translate3d(50px, 0px, 0px);
+    transform: translate3d(50px, 0px, 0px);
+    animation: fadein 2.5s;
+    -moz-animation: fadein 2.5s;
+    /* Firefox */
+    -webkit-animation: fadein 2.5s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2.5s;
+    /* Opera */
+    animation-delay: 2s; }
+
+/* line 475, header_menu.css.scss */
+.header-p-image {
+  background-color: gray;
+  height: 85vh;
+  position: relative;
+  background-image: url("../images/group_pic_2.jpg");
+  background-position-y: 15vh;
+  background-size: 100%; }
+  @media screen and (max-width: 765px) {
+    /* line 475, header_menu.css.scss */
+    .header-p-image {
+      height: 440px;
+      background-position-y: 130px; } }
+  @media screen and (max-width: 550px) {
+    /* line 475, header_menu.css.scss */
+    .header-p-image {
+      height: 380px;
+      background-size: 105%;
+      background-position-x: -20px; } }
+  @media screen and (max-width: 414px) {
+    /* line 475, header_menu.css.scss */
+    .header-p-image {
+      height: 320px; } }
+  @media screen and (max-width: 375px) {
+    /* line 475, header_menu.css.scss */
+    .header-p-image {
+      height: 300px; } }
+  @media screen and (max-width: 360px) {
+    /* line 475, header_menu.css.scss */
+    .header-p-image {
+      height: 290px; } }
+
+/* line 512, header_menu.css.scss */
+.mobile-menu {
+  position: absolute;
+  top: 0px;
+  display: none; }
+  @media screen and (max-width: 775px) {
+    /* line 512, header_menu.css.scss */
+    .mobile-menu {
+      display: block; } }
+
+/* line 521, header_menu.css.scss */
+.menu-logo-mobile-2 {
+  padding: 10%;
+  padding-bottom: 15%; }
+  @media screen and (max-width: 320px) {
+    /* line 521, header_menu.css.scss */
+    .menu-logo-mobile-2 {
+      padding: 6%;
+      padding-bottom: 11%;
+      width: 80%; } }
+
+/* line 531, header_menu.css.scss */
+#menu-mobile-item-1 {
+  background-color: #f0fbfd; }
+
+/* line 535, header_menu.css.scss */
+#top-li-mobile-menu {
+  margin-top: 30px; }
+  @media screen and (max-width: 320px) {
+    /* line 535, header_menu.css.scss */
+    #top-li-mobile-menu {
+      margin-top: 20px; } }
+
+/* line 542, header_menu.css.scss */
+#drawer-toggle {
+  position: absolute;
+  opacity: 0; }
+
+/* line 547, header_menu.css.scss */
+#drawer-toggle-label {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  left: 27px;
+  height: 100px;
+  width: 50px;
+  display: block;
+  position: fixed;
+  background: rgba(255, 255, 255, 0);
+  z-index: 1;
+  transition: all 0.5s ease-in-out; }
+
+/* adds our "hamburger" menu icon */
+/* line 565, header_menu.css.scss */
+#drawer-toggle-label:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 34px;
+  background: black;
+  left: 30%;
+  top: 58px;
+  box-shadow: 0px 10px 0 black, 0 20px 0 black; }
+
+/* line 577, header_menu.css.scss */
+#drawer {
+  position: fixed;
+  top: 0;
+  left: -85%;
+  height: 100%;
+  width: 85%;
+  background: #2f2f2f;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  -webkit-overflow-scrolling: touch;
+  transition: all 0.5s ease-in-out;
+  background: #0A1331;
+  /* For browsers that do not support gradients */ }
+  /* line 601, header_menu.css.scss */
+  #drawer ul {
+    margin-top: 0px;
+    text-align: left;
+    margin-left: 0px; }
+    @media screen and (max-width: 320px) {
+      /* line 601, header_menu.css.scss */
+      #drawer ul {
+        margin-top: 20px; } }
+  /* line 609, header_menu.css.scss */
+  #drawer li {
+    height: 45px;
+    letter-spacing: 1px;
+    padding-left: 35px;
+    padding-top: 0.6em;
+    background-color: #222E50;
+    margin-top: 3px;
+    list-style: none; }
+    /* line 629, header_menu.css.scss */
+    #drawer li a {
+      color: white; }
+  /* line 633, header_menu.css.scss */
+  #drawer h1 {
+    color: white; }
+    @media screen and (max-width: 414px) {
+      /* line 633, header_menu.css.scss */
+      #drawer h1 {
+        font-size: 1.7em; } }
+  /* line 640, header_menu.css.scss */
+  #drawer p {
+    color: white;
+    text-align: left;
+    padding-left: 30px; }
+
+/* line 647, header_menu.css.scss */
+#mobile-menu-1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 21px;
+  margin-bottom: 32px; }
+  /* line 651, header_menu.css.scss */
+  #mobile-menu-1 li {
+    line-height: 17px;
+    border-left: 5px #0057CC solid; }
+
+/* line 657, header_menu.css.scss */
+#mobile-menu-2 {
+  font-size: 14px;
+  line-height: 31px; }
+  /* line 660, header_menu.css.scss */
+  #mobile-menu-2 li {
+    list-style-position: inside;
+    background-position-x: 25px;
+    background-position-y: 10px;
+    padding-left: 70px;
+    line-height: 30px;
+    background-size: 25px auto; }
+  @media screen and (max-width: 320px) {
+    /* line 657, header_menu.css.scss */
+    #mobile-menu-2 {
+      font-size: 12px; } }
+
+/* line 673, header_menu.css.scss */
+#mm2a {
+  background: url("../images/PropertyMaintenance.png") no-repeat 0 0; }
+
+/* line 677, header_menu.css.scss */
+#mm2b {
+  background: url("../images/Administration.png") no-repeat 0 0; }
+
+/* line 681, header_menu.css.scss */
+#mm2c {
+  background: url("../images/Payments.png") no-repeat 0 0; }
+
+/* line 685, header_menu.css.scss */
+#mm2d {
+  background: url("../images/Paperwork.png") no-repeat 0 0; }
+
+/* line 689, header_menu.css.scss */
+#mm2e {
+  background: url("../images/Insurance.png") no-repeat 0 0; }
+
+/* line 693, header_menu.css.scss */
+#mm2f {
+  background: url("../images/Planning.png") no-repeat 0 0; }
+
+/* line 697, header_menu.css.scss */
+#mm2g {
+  background: url("../images/CreditCard.png") no-repeat 0 0; }
+
+/* line 701, header_menu.css.scss */
+#mm2h {
+  background: url("../images/Concierge.png") no-repeat 0 0; }
+
+/* actual page content pane */
+/* line 709, header_menu.css.scss */
+#page-content {
+  margin-left: 0px;
+  margin-top: 50px;
+  width: 100%;
+  height: calc(100% - 50px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  padding: 20px; }
+
+/* line 720, header_menu.css.scss */
+#drawer-toggle:checked ~ #drawer-toggle-label,
+#drawer-toggle:checked ~ header {
+  left: 85%; }
+
+/* line 725, header_menu.css.scss */
+#drawer-toggle:checked ~ #drawer {
+  left: 0px; }
+
+/* line 729, header_menu.css.scss */
+#drawer-toggle:checked ~ #page-content {
+  margin-left: 85%; }
+
+/* checked styles (menu open state) */
+/* line 735, header_menu.css.scss */
+#drawer-toggle:checked ~ #drawer-toggle-label {
+  height: 100%;
+  width: calc(100% - 84%); }
+
+/* line 741, header_menu.css.scss */
+#drawer-toggle:checked ~ #drawer-toggle-label,
+#drawer-toggle:checked ~ header {
+  left: 84%; }
+
+/* line 746, header_menu.css.scss */
+#drawer-toggle:checked ~ #drawer {
+  left: 0px; }
+
+/* line 750, header_menu.css.scss */
+#drawer-toggle:checked ~ #page-content {
+  margin-left: 350px; }
+
+/* line 754, header_menu.css.scss */
+[type="checkbox"] + label {
+  margin-left: 0px !important; }
+
+/* line 758, header_menu.css.scss */
+.mobile-menu-phone {
+  padding-top: 30px; }
+  /* line 760, header_menu.css.scss */
+  .mobile-menu-phone p {
+    text-align: center !important;
+    padding-left: 0 !important;
+    font-size: 13px;
+    line-height: 14px; }

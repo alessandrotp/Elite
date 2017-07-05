@@ -1,0 +1,5 @@
+/* line 16, about_us.scss */
+.header {
+  background-color: black !important;
+  width: 10%;
+  height: 20vh; }

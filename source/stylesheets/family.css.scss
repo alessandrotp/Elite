@@ -1,0 +1,199 @@
+// .f-header{
+// 	height: 40vh;
+// 	width: 100%;
+// 	background-image: url('../images/group-in-meeting-room-office-in-page.jpg');
+// 	background-size: cover;
+// }
+
+.header-p-image {
+	background-image: url('../images/group-in-meeting-room-office-in-page.jpg') !important;
+	background-repeat: no-repeat;
+	background-position-y: -200px !important;
+	background-size: cover !important;
+	background-attachment: fixed;
+	@media screen and (max-width: 414px) {
+	    width: 100%;
+	    height: 335px !important;
+	    background-size: contain !important;
+	    background-position-y: 130px !important;
+	    background-position-x: 0px !important;
+	    background-color: transparent !important;
+	  }
+	  @media screen and (max-width: 375px) {
+	    height: 324px !important;
+	  }
+	  @media screen and (max-width: 360px) {
+	    height: 317px !important;
+	  }
+	  @media screen and (max-width: 320px) {
+	    height: 296px !important;
+	  }
+}
+
+.f-section-1{
+	padding-top: 60px;
+	p{
+		// font-weight: 300;
+		// font-size: 1.4em;
+
+    text-align: left;
+    font-size: 1.4em;
+    padding-right: 5%;
+    font-weight: 300;
+	}
+}
+
+.f-section-1-left{
+  text-align: left;
+	h1{
+		// font-size: 50px;
+		color: $bleu;
+    // font-weight: 400;
+    line-height: 90%;
+    font-size: 62px;
+	}
+	.underline {
+		// border: 3px solid $bleu;
+		// width: 30%;
+		// margin-left: 40px;
+    border: 5px solid $bleu;
+    width: 15%;
+		@media screen and (max-width: 765px) {
+			width: 20%;
+		}
+		@media screen and (max-width: 414px) {
+			border: 4px solid $bleu;
+			width: 25%;
+			margin-left: 80px;
+		}
+	}
+}
+
+.f-section-1-right{
+  float: left !important;
+	text-align: left;
+	// width: 32%;
+  // padding-right: 5%;
+	@media screen and (max-width: 414px) {
+	    width: 90%;
+	    padding-right: 10%;
+	    padding-top: 15%;
+	}	
+}
+
+#section3 {
+  padding-top: 5%;
+  height: 590px !important;
+  // margin-bottom: 7%;
+  .overline {
+    border: 5px solid $bleu;
+    width: 25%;
+    position: absolute;
+    right: 8%;
+  }
+  #property-sub-service-subcontainer-1 {
+    position: relative;
+    // padding-top: 4%;
+  }
+  .property-sub-service-text {
+    text-align: right;
+    font-size: 49px;
+    padding-top: 8%;
+    padding-right: 8%;
+  }
+  .property-sub-services-subcontainer {
+    margin-top: 2%;
+    position: relative;
+  }
+  
+  #sub-service-1 {
+    background-image: url('../images/Healthcare-Concierge-Medicine.jpg');
+    background-size: 150%;
+    background-position-x: 30%;
+  }
+  #sub-service-2 {
+    background-image: url('../images/sign-contract.jpg');
+    background-size: 200%;
+    background-position-x: 50%;
+  }
+  #sub-service-3 {
+    background-image: url('../images/03.jpg');
+    background-size: 135%;
+    background-position-x: 65%;
+  }
+  #sub-service-4 {
+    background-image: url('../images/04.jpg');
+    background-size: 160%;
+    background-position-x: 50%;
+  }
+  #sub-service-5 {
+    background-image: url('../images/sign-contract.jpg');
+    background-size: 160%;
+    background-position-x: 65%;
+  }
+  #sub-service-6 {
+    background-image: url('../images/06.jpg');
+    background-size: 130%;
+    background-position-x: 40%;
+  }
+  #sub-service-7 {
+    background-image: url('../images/07.jpg');
+    background-size: 230%;
+    background-position-x: 80%;
+  }
+  #sub-service-8 {
+    background-image: url('../images/08.jpg');
+    background-size: 200%;
+    background-position-x: 40%;
+  }
+
+  .sub-service {
+    background-size: 100%;
+  }
+
+  .sub-service-w{
+    background:transparent;
+    width: 100%;
+    height: 370px;
+    background: rgba(0, 74, 173, 0.3);
+    mix-blend-mode: difference;
+  }
+
+  .sub-service-title {
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    bottom: 20px;
+    text-shadow: 0px 5px 3px #333333;
+    left: 60px;
+    font-size: 1.5em;
+    width: 60%;
+    text-align: left;
+  }
+}
+
+.highlight-text {
+  color: $bleu;
+  // font-weight: 600;
+  // font-size: 35px;
+  // font-family: 'Playfair Display', serif;
+  text-align: right;
+  // font-size: 37px;
+  padding-top: 8%;
+  padding-right: 8%;
+  color: #0057CC;
+  // font-weight: 400;
+  font-size: 49px;
+  line-height: 90%;
+  font-family: 'Playfair Display', serif;
+}
+
+.footer-col {
+  padding-top: 0% !important;
+}
+
+.footer-col-2 {
+  @media screen and (max-width: 765px) {
+    padding-top: 10%;
+  }
+}

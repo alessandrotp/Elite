@@ -1,0 +1,22 @@
+.footer-cont{
+	padding-top: 0 !important;
+	@media screen and (max-width: 765px) {
+		padding-top: 165% !important;
+	}
+}
+
+
+.footer-col-1, .footer-col-3{
+	visibility: visible;
+	bottom: 0px;
+}
+
+.footer-col {
+	padding-top: 20%;
+}
+
+.footer-cont{
+  @media screen and (max-width: 414px) {
+    padding-top: 5% !important;
+  }
+}
